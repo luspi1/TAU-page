@@ -1,0 +1,123 @@
+.news-swiper {
+  overflow: hidden;
+  padding: 15px;
+
+  .swiper-wrapper {
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__img {
+    padding-top: 53%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .swiper-slide img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .3s;
+  }
+
+  &__category {
+    display: inline-block;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    @media (max-width: 1280px) {
+      margin-top: 16px;
+      margin-bottom: 9px;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 12px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .swiper-slide:hover img {
+    transform: scale(1.07);
+
+    @media (max-width: 1024px) {
+      transform: scale(1.05);
+    }
+
+  }
+
+  &__content {
+    min-height: 137px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+
+  &__text {
+    max-width: 377px;
+    margin-bottom: 13px;
+    @media (max-width: 1024px) {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  .news__swiper-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      .news__swiper-controls {
+        order: -1;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+
+  .news__swiper-button-prev,
+  .news__swiper-button-next {
+    background: none;
+    border: none;
+    width: 55px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .news__swiper-button-next {
+    margin-left: 5px;
+  }
+
+  .news__swiper-button-prev svg path,
+  .news__swiper-button-next svg path {
+    transition: all .3s;
+  }
+
+  .news__swiper-button-prev:hover svg path,
+  .news__swiper-button-next:hover svg path {
+    fill: $purple-main;
+  }
+}

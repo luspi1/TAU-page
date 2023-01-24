@@ -1,5 +1,5 @@
 h2.home-page__subtitle {
-  color: #00B7F1;
+  color: $purple-main;
 }
 
 .home-page__news-container,
@@ -8,7 +8,7 @@ h2.home-page__subtitle {
 }
 
 .caption {
-  margin-top: 33px;
+  margin-top: 5px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -17,21 +17,22 @@ h2.home-page__subtitle {
   margin-bottom: 75px;
 
   &__title {
-    @include mudkty-medium;
+    @include montserrat-bold;
     font-size: 65px;
     line-height: 83px;
-    max-width: 39%;
+    max-width: 34%;
+    text-align: right;
 
     span {
-      color: $secondary;
+      color: $purple-main;
     }
   }
 
   &__slider {
-    width: 50%;
+    width: 58.5%;
 
     .swiper {
-      border-radius: 50px 0 0 0;
+      border-radius: 20px 0 0 0;
     }
 
     .swiper-slide {
@@ -39,7 +40,7 @@ h2.home-page__subtitle {
     }
 
     .caption-swiper__img {
-      padding-top: 41%;
+      padding-top: 44%;
       position: relative;
     }
 
@@ -55,9 +56,9 @@ h2.home-page__subtitle {
   .caption__slider-panel {
     display: flex;
     justify-content: space-between;
-    background-color: $secondary;
+    background-color: $purple-main;
     padding: 20px 130px 20px 38px;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 0 0 20px;
     min-height: 50px;
     align-items: center;
 
@@ -129,89 +130,21 @@ h2.home-page__subtitle {
     margin-bottom: 0;
   }
 
-  .news-swiper {
-    overflow: hidden;
-    padding: 15px;
-
-    &__img {
-      padding-top: 51%;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .swiper-slide img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      transition: all .3s;
-    }
-
-    &__category {
-      display: inline-block;
-      margin-top: 22px;
-      margin-bottom: 15px;
-    }
-
-    .swiper-slide:hover img {
-      transform: scale(1.07);
-    }
-
-
-    &__text {
-      max-width: 377px;
-      margin-bottom: 20px;
-    }
-
-    .news__swiper-panel {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .news__swiper-button-prev,
-    .news__swiper-button-next {
-      background: none;
-      border: none;
-      width: 55px;
-      height: 25px;
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-
-      svg {
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
-
-    .news__swiper-button-next {
-      margin-left: 5px;
-    }
-
-    .news__swiper-button-prev svg path,
-    .news__swiper-button-next svg path {
-      transition: all .3s;
-    }
-
-    .news__swiper-button-prev:hover svg path,
-    .news__swiper-button-next:hover svg path {
-      fill: #00B9EE;
-    }
-  }
 }
 
 .products {
-  background-color: #F3F3F3;
+  background: url("../img/products-slider-bg.jpg") no-repeat;
   padding: 43px 0 58px;
 
   &__slide-title {
-    margin-top: 23px;
-    max-width: 365px;
+    margin-top: 14px;
+    max-width: 371px;
     transition: all .3s;
+    color: #ffffff;
+  }
+
+  h2.products__title {
+    color: #ffffff;
   }
 
   .products-swiper {
@@ -223,10 +156,7 @@ h2.home-page__subtitle {
     }
 
     &__img {
-      display: block;
-      padding-top: 94%;
-      position: relative;
-      border-radius: 10px;
+      border-radius: 5px;
     }
 
     .swiper-slide {
@@ -234,22 +164,15 @@ h2.home-page__subtitle {
     }
 
     .swiper-slide img {
-      position: absolute;
-      left: 0;
-      top: 0;
       width: 100%;
       height: 100%;
-      border-radius: 10px;
+      border-radius: 5px;
       transition: all .3s;
-      z-index: 99;
     }
 
-    .swiper-slide:hover img {
-      transform: scale(1.1);
-    }
 
     .swiper-slide:hover .products__slide-title {
-      color: $secondary;
+      color: #ded7d7;
     }
 
     .products__swiper-panel {
@@ -286,107 +209,24 @@ h2.home-page__subtitle {
 
     .products__swiper-button-prev:hover svg path,
     .products__swiper-button-next:hover svg path {
-      fill: #00B9EE;
-    }
-  }
-}
-
-.services {
-  display: none;
-  padding: 78px 0 90px;
-
-  &__title {
-    margin-bottom: 11px;
-  }
-
-  .services-swiper {
-    overflow-x: hidden;
-
-    .swiper-wrapper {
-      margin-bottom: 28px;
-    }
-
-    &__img {
-      width: 31%;
-      padding-top: 28%;
-      position: relative;
-      border-radius: 20px;
-      margin-right: 15px;
-    }
-
-    &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      max-width: 200px;
-    }
-
-    .services__slide-title {
-      @include mudkty-regular;
-    }
-
-    .services__slide-text {
-      @include montserrat-regular;
-      font-size: 18px;
-      line-height: 29px;
-    }
-
-    .swiper-slide {
-      cursor: pointer;
-      display: flex;
+      fill: #ffffff;
     }
 
 
-    .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      border-radius: 20px;
-    }
+    .btn {
+      background-color: #ffffff;
+      color: $purple-main;
 
-    .services__swiper-panel {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .services__swiper-button-prev,
-    .services__swiper-button-next {
-      position: relative;
-      width: 55px;
-      height: 30px;
-      cursor: pointer;
-      display: inline-block;
-      background: none;
-      border: none;
-
-      svg {
-        position: absolute;
-        left: 0;
-        top: 0;
+      &:hover {
+        color: #6931df;
       }
     }
 
-    .services__swiper-button-next {
-      margin-left: 5px;
-    }
-
-    .services__swiper-button-prev svg path,
-    .services__swiper-button-next svg path {
-      transition: all .3s;
-    }
-
-    .services__swiper-button-prev:hover svg path,
-    .services__swiper-button-next:hover svg path {
-      fill: #00B9EE;
-    }
   }
 }
 
-.careers {
 
+.careers {
   padding: 75px 0 48px;
 
   &__title {
@@ -403,18 +243,17 @@ h2.home-page__subtitle {
 
     .swiper-slide {
       border: 1px solid #A5B4C4;
-      border-radius: 20px;
+      border-radius: 5px;
       height: 205px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       background: #ffffff;
-      border-radius: 20px;
       cursor: pointer;
       transition: all .3s;
 
       &:hover {
-        background: $secondary;
+        background: $purple-main;
       }
 
       &:hover .careers-swiper__title,
@@ -424,15 +263,15 @@ h2.home-page__subtitle {
     }
 
     .link-slide {
-      background: $secondary;
+      background: $purple-main;
       position: relative;
 
       &:hover {
-        background: #00C9FF;
+        background: #6931df;
       }
 
       &:hover::after {
-        left: 90px;
+        left: 60px;
         opacity: 1;
       }
 
@@ -440,16 +279,16 @@ h2.home-page__subtitle {
         color: #FFFFFF;
         max-width: 160px;
         margin-top: 20px;
-        margin-left: 50px;
+        margin-left: 20px;
       }
 
       &::after {
         content: '';
         opacity: 0.6;
         position: absolute;
-        left: 53px;
+        left: 25px;
         transition: all .3s;
-        bottom: 0;
+        bottom: -10px;
         transform: translateY(-50%);
         width: 55px;
         height: 36px;
@@ -460,7 +299,7 @@ h2.home-page__subtitle {
 
     &__title {
       max-width: 360px;
-      padding-right: 20px;
+      padding-right: 40px;
       margin-top: 20px;
       margin-left: 24px;
       color: $primary;
@@ -469,6 +308,9 @@ h2.home-page__subtitle {
     &__link {
       margin-left: 24px;
       margin-bottom: 30px;
+      @include montserrat-semibold;
+      font-size: 20px;
+      line-height: 24px;
       color: #A5B4C4;
     }
 
@@ -505,7 +347,7 @@ h2.home-page__subtitle {
 
     .careers__swiper-button-prev:hover svg path,
     .careers__swiper-button-next:hover svg path {
-      fill: #00B9EE;
+      fill: $purple-main;
     }
   }
 }

@@ -5,5 +5,4 @@ import './components/scrollAnimation'
 import './components/promptModals'
 import './components/careersModal'
 import './components/copyValue'
-import './components/langSwitch'
-import './components/hoverVideo'
+

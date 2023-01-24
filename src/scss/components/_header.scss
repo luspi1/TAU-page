@@ -7,8 +7,8 @@
   }
 
   &__logo img {
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
   }
 
   .burger-btn {
@@ -16,7 +16,7 @@
   }
 
   &__nav {
-    width: 52%;
+    width: 60%;
 
     .nav__list {
       display: flex;
@@ -35,24 +35,18 @@
         transition: all .3s;
 
         &:hover {
-          color: $secondary;
+          color: $purple-main;
         }
       }
     }
   }
 
-  &__controls {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    position: relative;
 
     .search-btn {
       border: none;
       background: none;
       cursor: pointer;
     }
-  }
 
 
   .search-menu {
@@ -103,7 +97,7 @@
       }
 
       &:focus {
-        border-bottom: 1px solid $secondary;
+        border-bottom: 1px solid $purple-main;
       }
 
       &:focus::-webkit-input-placeholder {
@@ -136,7 +130,7 @@
 
       &__title-link {
         display: block;
-        color: $secondary;
+        color: $purple-main;
       }
 
       &__remote-link {
