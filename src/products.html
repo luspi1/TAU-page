@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Продукты'
+})
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+
+  <main class="main products-page">
+    <section class="page-section products-main">
+      <div class="container">
+        <div class="products-main__top">
+          <h1 class="products-main__title main-title">
+            Продукты
+          </h1>
+          <div class="products-main__desc">
+            <p class="accent-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco labori...
+            </p>
+            <ul class="products-main__menu">
+              <li class="products-main__menu-item">
+                <button
+                  class="products-main__menu-btn main-link products-main__menu-btn_active">
+                  Все продукты
+                </button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn main-link">Продукт 1
+                </button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn main-link">Продукт 2
+                </button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn main-link">Продукт 3
+                </button>
+              </li>
+              <li class="products-main__menu-item">
+                <button class="products-main__menu-btn main-link">Продукт 4
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="products-main__items">
+
+      </div>
+    </section>
+
+    <section class="page-section products-page__items">
+      <div class="container">
+        <ul class="products-page__products-list">
+          <li class="products-page__products-list-item products-item">
+            <div class="products-item__img">
+              <img src="./img/product-img1.jpg" alt="Product 1">
+            </div>
+            <div class="products-item__content">
+              <h3 class="products-item__content-title main-subtitle">
+                Продукт 1
+              </h3>
+              <p class="regular-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse
+              </p>
+
+              <a class="main-link products-item__content-link" href="#">
+                Узнать больше +
+              </a>
+            </div>
+          </li>
+          <li class="products-page__products-list-item products-item products-item_left">
+            <div class="products-item__img">
+              <img src="./img/product-img1.jpg" alt="Product 2">
+            </div>
+            <div class="products-item__content">
+              <h3 class="products-item__content-title main-subtitle">
+                Продукт 2
+              </h3>
+              <p class="regular-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse
+              </p>
+
+              <a class="main-link products-item__content-link" href="#">
+                Узнать больше +
+              </a>
+            </div>
+          </li>
+          <li class="products-page__products-list-item products-item">
+            <div class="products-item__img">
+              <img src="./img/product-img1.jpg" alt="Product 3">
+            </div>
+            <div class="products-item__content">
+              <h3 class="products-item__content-title main-subtitle">
+                Продукт 3
+              </h3>
+              <p class="regular-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse
+              </p>
+
+              <a class="main-link products-item__content-link" href="#">
+                Узнать больше +
+              </a>
+            </div>
+          </li>
+          <li class="products-page__products-list-item products-item products-item_left">
+            <div class="products-item__img">
+              <img src="./img/product-img1.jpg" alt="Product 4">
+            </div>
+            <div class="products-item__content">
+              <h3 class="products-item__content-title main-subtitle">
+                Продукт 4
+              </h3>
+              <p class="regular-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse
+              </p>
+
+              <a class="main-link products-item__content-link" href="#">
+                Узнать больше +
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page-section articles">
+      <div class="container">
+        <h2 class="articles__title main-subtitle">Статьи</h2>
+      </div>
+
+      <div class="container products-page__articles-container">
+        @include('partials/articles-slider.html')
+      </div>
+
+
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>

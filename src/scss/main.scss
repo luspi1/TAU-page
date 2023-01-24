@@ -7,14 +7,17 @@
 
 // Страницы
 @import "pages/home";
+@import "pages/products";
 
 
 // Компоненты
 @import "./components/header";
 @import "./components/footer";
 @import "./components/news-slider";
+@import "./components/articles-slider";
 
 
 // Медиа
 @import "media/media-home";
+@import "media/media-products";
 

@@ -222,7 +222,7 @@ h2.home-page__subtitle {
       color: $purple-main;
 
       &:hover {
-        color: #6931df;
+        color: $purple-main-hover;
       }
     }
 
@@ -271,7 +271,7 @@ h2.home-page__subtitle {
       position: relative;
 
       &:hover {
-        background: #6931df;
+        background: $purple-main-hover;
       }
 
       &:hover::after {

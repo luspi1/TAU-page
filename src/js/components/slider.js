@@ -120,32 +120,32 @@ const swiperCareers = new Swiper('.careers__swiper', {
 // });
 
 //
-// const swiperArticles = new Swiper('.articles__swiper', {
-//   navigation: {
-//     nextEl: '.articles__swiper-button-next',
-//     prevEl: '.articles__swiper-button-prev'
-//   },
-//
-//   noSwiping: true,
-//   noSwipingClass: 'swiper-no-swiping',
-//
-//   slidesPerView: 1,
-//   spaceBetween: 35,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 25
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     1280: {
-//       spaceBetween: 42,
-//       slidesPerView: 4,
-//     },
-//   }
-// });
+const swiperArticles = new Swiper('.articles__swiper', {
+  navigation: {
+    nextEl: '.articles__swiper-button-next',
+    prevEl: '.articles__swiper-button-prev'
+  },
+
+  noSwiping: true,
+  noSwipingClass: 'swiper-no-swiping',
+
+  slidesPerView: 1,
+  spaceBetween: 35,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 25
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1280: {
+      spaceBetween: 42,
+      slidesPerView: 4,
+    },
+  }
+});
 //
 //
 // const swiperGallery = new Swiper('.product-gallery__swiper', {

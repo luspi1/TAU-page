@@ -104,14 +104,18 @@ select::-ms-expand {
   }
 }
 
+.header_border {
+  border-bottom: 1px solid #A5B4C4;
+}
+
 
 // шрифты
 
 .main-title {
-  @include mudkty-regular;
+  @include montserrat-semibold;
   font-size: 108px;
   line-height: 65px;
-  color: #00B9EE;
+  color: $purple-main;
 
   @media (max-width: 1024px) {
     font-size: 80px;
