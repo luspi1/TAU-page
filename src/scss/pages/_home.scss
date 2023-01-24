@@ -133,7 +133,11 @@ h2.home-page__subtitle {
 }
 
 .products {
-  background: url("../img/products-slider-bg.jpg") no-repeat;
+
+  background-image: url("../img/products-slider-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 43px 0 58px;
 
   &__slide-title {
