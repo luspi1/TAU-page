@@ -1,0 +1,51 @@
+$primary: #1C283A;
+$secondary: #00B7F1;
+
+@mixin mudkty-light {
+  font-family: 'MUDKTY+WTVolkolakGrotesque', sans-serif;
+  font-weight: 300;
+}
+
+@mixin mudkty-regular {
+  font-family: 'MUDKTY+WTVolkolakGrotesque', sans-serif;
+  font-weight: 400;
+}
+
+@mixin mudkty-medium {
+  font-family: 'MUDKTY+WTVolkolakGrotesque', sans-serif;
+  font-weight: 500;
+}
+@mixin mudkty-bold {
+  font-family: 'MUDKTY+WTVolkolakGrotesque', sans-serif;
+  font-weight: 700;
+}
+
+@mixin montserrat-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+@mixin montserrat-regular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin montserrat-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+@mixin montserrat-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@mixin montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+@mixin montserrat-extra {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}

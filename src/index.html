@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Главная'
+})
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html')
+
+  <main class="main home-page">
+    <div class="caption">
+      <h1 class="caption__title">Doing<br class="caption__br_active">
+        <span>games and services</span> for millions of people!</h1>
+      <div class="caption__slider">
+        <div class="swiper caption-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="caption-swiper__img">
+                <img src="img/caption-slide-1.jpg"
+                     alt="slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caption-swiper__img">
+                <img src="img/caption-slide-1.jpg"
+                     alt="slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caption-swiper__img">
+                <img src="img/caption-slide-1.jpg"
+                     alt="slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caption-swiper__img">
+                <img src="img/caption-slide-1.jpg"
+                     alt="slide">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="caption-swiper__img">
+                <img src="img/caption-slide-1.jpg"
+                     alt="slide">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="caption__slider-panel slider-panel">
+          <div class="slider-panel__content">
+            <h3 class="accent-text">Welcome to our Tallinn office!</h3>
+          </div>
+          <div class="slider-panel__controls">
+            <button class="swiper-button-prev">
+              <svg width="40" height="18" viewBox="0 0 40 18" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 7.80005H2.30005V9.80005H40V7.80005Z" fill="white"/>
+                <path
+                  d="M0.0999756 8.90002L9.09998 0.5L10.5 2L3.09998 8.90002L10.5 15.7L9.09998 17.2L0.0999756 8.90002Z"
+                  fill="white"/>
+              </svg>
+
+            </button>
+            <button class="swiper-button-next">
+              <svg width="40" height="18" viewBox="0 0 40 18" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M37.8 7.80005H0.0999756V9.80005H37.8V7.80005Z"
+                      fill="white"/>
+                <path
+                  d="M31 17.2L29.6 15.7L37 8.90002L29.6 2L31 0.5L40 8.90002L31 17.2Z"
+                  fill="white"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <section class="page-section news">
+      <div class="container">
+        <h2 class="main-subtitle home-page__subtitle">What's new</h2>
+      </div>
+      <div class="container home-page__news-container">
+        <div class="news__swiper news-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <div class="news-swiper__img">
+                <img src="img/news-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="news-swiper__category category-text">News</a>
+              <div class="news-swiper__content swiper-no-swiping">
+                <p class="news-swiper__text main-link">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="news-swiper__img">
+                <img src="img/news-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="blog.html" class="news-swiper__category category-text">Blog</a>
+              <div class="news-swiper__content swiper-no-swiping">
+                <p class="news-swiper__text main-link">Welcome to our all-new hq!
+                  Our new home is here!</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="news-swiper__img">
+                <img src="img/news-slide-3.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="news-swiper__category category-text">News</a>
+              <div class="news-swiper__content swiper-no-swiping">
+                <p class="news-swiper__text main-link">Cm games partners with MINUDOC
+                  PLATFORM</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="news-swiper__img">
+                <img src="img/news-slide-4.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="news-swiper__category category-text">News</a>
+              <div class="news-swiper__content swiper-no-swiping">
+                <p class="news-swiper__text main-link">It sounds crazy, but here we are —
+                  10
+                  years in the business</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="news-swiper__img">
+                <img src="img/news-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <a href="#" class="news-swiper__category category-text">News</a>
+              <div class="news-swiper__content swiper-no-swiping">
+                <p class="news-swiper__text main-link">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="news-swiper__img">
+                <img src="img/news-slide-2.jpg"
+                     alt="slide">
+              </div>
+              <a href="blog.html" class="news-swiper__category category-text">Blog</a>
+              <div class="news-swiper__content swiper-no-swiping">
+                <p class="news-swiper__text main-link">Into the radius is coming to Meta
+                  Quest
+                  2 in September 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="news__swiper-panel">
+            <a href="#" class="btn">
+              all news
+            </a>
+            <div class="news__swiper-controls">
+              <button class="news__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+              <button class="news__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section products">
+      <div class="container">
+        <h2 class="main-subtitle home-page__subtitle products__title">Games</h2>
+      </div>
+      <div class="home-page__products-container container">
+        <div class="products__swiper products-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <a href="one-product.html" class="products-swiper__img">
+                <img src="img/products-slide-1.jpg"
+                     alt="slide">
+              </a>
+              <h3 class="products__slide-title main-link">ZOOCRAFT: ANIMAL FAMILY</h3>
+            </div>
+            <div class="swiper-slide ">
+              <a href="one-product.html" class="products-swiper__img">
+                <img src="img/products-slide-2.jpg"
+                     alt="slide">
+              </a>
+              <h3 class="products__slide-title main-link">DREAM CATS</h3>
+            </div>
+            <div class="swiper-slide ">
+              <a href="one-product.html" class="products-swiper__img">
+                <img src="img/products-slide-3.jpg"
+                     alt="slide">
+              </a>
+              <h3 class="products__slide-title main-link">HOT WHEELS INFINITE LOOP</h3>
+            </div>
+            <div class="swiper-slide ">
+              <a href="one-product.html" class="products-swiper__img">
+                <img src="img/products-slide-4.jpg"
+                     alt="slide">
+              </a>
+              <h3 class="products__slide-title main-link">NEVER ENDING DUNGEON</h3>
+            </div>
+            <div class="swiper-slide ">
+              <a href="one-product.html" class="products-swiper__img">
+                <img src="img/products-slide-1.jpg"
+                     alt="slide">
+              </a>
+              <h3 class="products__slide-title main-link">ZOOCRAFT: ANIMAL FAMILY</h3>
+            </div>
+            <div class="swiper-slide ">
+              <a href="one-product.html" class="products-swiper__img">
+                <img src="img/products-slide-2.jpg"
+                     alt="slide">
+              </a>
+              <h3 class="products__slide-title main-link">DREAM CATS</h3>
+            </div>
+
+          </div>
+          <div class="products__swiper-panel">
+            <a href="products.html" class="btn">
+              all games
+            </a>
+            <div class="products__swiper-controls">
+              <button class="products__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+
+              </button>
+              <button class="products__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="page-section services">
+      <div class="container">
+        <h2 class="main-subtitle home-page__subtitle services__title">
+          Services</h2>
+        <div class="services__swiper services-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <div class="services-swiper__img">
+                <img src="img/services-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <div class="services-swiper__content">
+                <h3 class="services__slide-title">Service 1</h3>
+                <p class="services__slide-text">Lorem ipsum dolor sit amet,
+                  consectetur</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="services-swiper__img">
+                <img src="img/services-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <div class="services-swiper__content">
+                <h3 class="services__slide-title">Service 2</h3>
+                <p class="services__slide-text">Lorem ipsum dolor sit amet,
+                  consectetur</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="services-swiper__img">
+                <img src="img/services-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <div class="services-swiper__content">
+                <h3 class="services__slide-title">Service 3</h3>
+                <p class="services__slide-text">Lorem ipsum dolor sit amet,
+                  consectetur</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="services-swiper__img">
+                <img src="img/services-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <div class="services-swiper__content">
+                <h3 class="services__slide-title">Service 4</h3>
+                <p class="services__slide-text">Lorem ipsum dolor sit amet,
+                  consectetur</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="services-swiper__img">
+                <img src="img/services-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <div class="services-swiper__content">
+                <h3 class="services__slide-title">Service 5</h3>
+                <p class="services__slide-text">Lorem ipsum dolor sit amet,
+                  consectetur</p>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="services-swiper__img">
+                <img src="img/services-slide-1.jpg"
+                     alt="slide">
+              </div>
+              <div class="services-swiper__content">
+                <h3 class="services__slide-title">Service 6</h3>
+                <p class="services__slide-text">Lorem ipsum dolor sit amet,
+                  consectetur</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="services__swiper-panel">
+            <button class="btn">
+              all services
+            </button>
+            <div class="services__swiper-controls">
+              <button class="services__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+
+              </button>
+              <button class="services__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section careers">
+      <div class="container">
+        <h2 class="main-subtitle home-page__subtitle careers__title">
+          Careers</h2>
+        <div class="careers__swiper careers-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h3 class="careers-swiper__title accent-text">Senior game
+                designer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="careers-swiper__title accent-text">Lead unity
+                developer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="careers-swiper__title accent-text">Art lead</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
+            </div>
+            <div class="swiper-slide link-slide">
+              <a class="careers-swiper__title accent-text" href="careers.html">Join
+                our
+                team</a>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="careers-swiper__title accent-text">Senior game
+                designer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
+            </div>
+            <div class="swiper-slide">
+              <h3 class="careers-swiper__title accent-text">Lead unity
+                developer</h3>
+              <a class="careers-swiper__link main-link" href="#">Remote</a>
+            </div>
+          </div>
+          <div class="careers__swiper-panel">
+            <div class="careers__swiper-controls">
+              <button class="careers__swiper-button-prev">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                    fill="#D2D6DC"/>
+                </svg>
+
+              </button>
+              <button class="careers__swiper-button-next">
+                <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                  <path
+                    d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                    fill="#D2D6DC"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>
