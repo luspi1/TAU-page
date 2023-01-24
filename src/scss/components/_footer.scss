@@ -1,6 +1,6 @@
 .footer {
-  background: #1C283A;
-  padding: 50px 0;
+  background: #000000;
+  padding: 33px 0;
 
   &__wrapper {
     display: flex;
@@ -19,8 +19,9 @@
   }
 
   &__company {
+    font-weight: 600;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 15px;
     color: #FFFFFF;
 
     @media (max-width: 1024px) {
@@ -40,8 +41,9 @@
     width: 39%;
 
     a {
-      font-size: 16px;
-      line-height: 25px;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 21px;
       color: #FFFFFF;
       transition: all .3s;
 
@@ -66,8 +68,10 @@
   }
 
   &__menu-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
     @media (max-width: 1024px) {
-      padding-right: 15px;
 
       a {
         font-size: 14px;
@@ -81,7 +85,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 12%;
+    width: 10%;
     svg {
       width: 26px;
       height: 26px;
