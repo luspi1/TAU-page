@@ -1,0 +1,197 @@
+@media (min-width: 1940px) {
+  .product-one .product-gallery .container {
+    max-width: 1920px;
+  }
+  .product-one .product-features {
+    padding: 88px 0 0 0;
+    background-position: center;
+    background-size: 103%;
+    border-radius: 0 0 0 0;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1650px) {
+  .product-one .product-caption__container {
+    padding-left: 15px;
+  }
+
+  .product-one .product-features {
+    padding: 149px 0 50px 0;
+  }
+
+}
+
+@media (max-width: 1495px) {
+  .product-one .product-caption__content {
+    width: 52%;
+    margin-right: 40px;
+  }
+    .product-one .product-features__list-item {
+    width: 26%;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .product-one .product-caption {
+    margin-top: 55px;
+    margin-bottom: 72px;
+  }
+
+  .product-one .product-caption__content-title {
+    margin-bottom: 5px;
+  }
+  .product-one .product-caption__content-desc {
+    margin-bottom: 40px;
+  }
+  .product-one .product-caption__container {
+    flex-direction: column;
+  }
+
+  .product-one .product-caption__content {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .product-one .product-caption__image {
+    margin-right: 0;
+  }
+
+  .product-one .product-features__list {
+    justify-content: space-around;
+  }
+
+  .product-one .product-features__list-title {
+    width: 100%;
+  }
+  .product-one .product-features__list-item {
+    margin-bottom: 35px;
+  }
+  .product-one .product-features__item-text {
+    margin-top: -10px;
+  }
+  .product-one .product-features {
+    margin-bottom: 72px;
+    padding: 72px 0 32px;
+  }
+
+  .product-one .product-gallery {
+    margin-bottom: 36px;
+  }
+
+  .product-one .product-gallery__img {
+    height: 300px;
+  }
+  .product-one .page-section.articles > .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .product-one .page-section.articles > .container sup {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .product-one .product-caption {
+    margin: 45px 0 57px;
+  }
+
+  .product-one .product-caption__content-title {
+    margin-bottom: 16px;
+    line-height: 95px;
+
+  }
+  .product-one .product-caption__content-desc {
+    margin-bottom: 32px;
+  }
+  .product-one .product-caption__content {
+    margin-bottom: 45px;
+  }
+  .product-one .product-caption__video img {
+    border-radius: 35px;
+  }
+
+  .product-one .product-features {
+    margin-bottom: 59px;
+    padding: 53px 0 28px;
+  }
+
+  .product-one .product-features__list-title .main-title {
+    line-height: 80px;
+    font-size: 42px;
+  }
+  .product-one .product-features__list-item {
+    margin-bottom: 28px;
+  }
+  .product-one .product-gallery {
+    margin-bottom: 17px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .product-one .product-caption__container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .product-one .product-caption__image {
+    width: 100%;
+    max-width: 440px;
+  }
+  .product-one .product-caption__content {
+    width: 100%;
+  }
+
+  .product-one .product-caption__content-title {
+    text-align: center;
+  }
+
+  .product-one .product-caption__platform-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .product-one .product-caption__platform-list li {
+    width: 40%;
+    margin-right: 0;
+  }
+  .product-one .product-features__list-title .main-title {
+    font-size: 32px;
+  }
+  .product-one .product-features__list-item:not(.product-features__list-title) {
+    width: 47%;
+  }
+  .product-one .product-features__list {
+    justify-content: space-between;
+  }
+  .product-one .product-gallery .product-gallery__swiper-button-prev,
+  .product-one .product-gallery .product-gallery__swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .product-one .product-features__list-item:not(.product-features__list-title) {
+    width: 100%;
+  }
+  .product-one .product-gallery__swiper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .product-one .product-gallery__pagination .swiper-pagination-bullet {
+    width: 20px;
+    border-radius: 30px;
+    height: 5px;
+  }
+
+  .product-one .product-gallery__pagination .swiper-pagination-bullet-active {
+    width: 60px;
+  }
+
+}
+
+

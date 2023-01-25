@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Продукт'
+})
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+
+  <main class="main product-one">
+    <section class="section product-caption">
+      <div class="container product-caption__container">
+        <div class="product-caption__content">
+          <h1 class="product-caption__content-title main-title">Продукт 1</h1>
+          <p class="product-caption__content-desc accent-text">
+            Nitro Nation takes drag and drift racing to the next level with a 3D
+            world full of stunning new customizable cars, amazing racing
+            physics, and unlimited in-depth gameplay that guarantees racers an
+            unforgettable experience, all on your mobile device!
+          </p>
+        </div>
+        <div class="product-caption__image">
+          <img src="img/one-product.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="section product-features">
+      <div class="container">
+        <ul class="product-features__list">
+          <li class="product-features__list-item product-features__list-title">
+            <h2 class="main-title">Особенности</h2>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/features-item.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <span>incididunt ut labore et dolore</span>
+              magna aliqua.
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/features-item.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Lorem ipsum dolor sit amet, <span>consectetur</span> adipiscing elit, sed do eiusmod tempor...
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/features-item.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span>eiusmod tempor ...</span>
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/features-item.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
+            </p>
+          </li>
+          <li class="product-features__list-item">
+            <div class="product-features__item-img">
+              <img src="img/features-item.png" alt="feature">
+            </div>
+            <p class="product-features__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span>eiusmod tempor</span> incididunt ut
+              labore et
+              dolore magna aliqua.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section product-gallery">
+      <div class="container">
+        <div class="swiper product-gallery__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/product-img1.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-gallery__img">
+                <img src="img/product-img1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination product-gallery__pagination"></div>
+          <button class="product-gallery__swiper-button-prev">
+            <svg width="64" height="126" viewBox="0 0 64 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M61.925 125.025C62.125 125.025 62.325 124.925 62.525 124.825C62.825 124.525 62.825 123.925 62.525 123.625L2.025 63.2251L63.425 1.42501C63.725 1.12501 63.725 0.525 63.425 0.225C63.125 -0.075 62.525 -0.075 62.225 0.225L0.225 62.625C-0.075 62.925 -0.075 63.525 0.225 63.825L61.325 124.825C61.425 124.925 61.725 125.025 61.925 125.025Z"
+                fill="#D2D6DC"/>
+            </svg>
+          </button>
+          <button class="product-gallery__swiper-button-next">
+            <svg width="64" height="126" viewBox="0 0 64 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.725 125.025C1.525 125.025 1.32499 124.925 1.12499 124.825C0.824994 124.525 0.824994 123.925 1.12499 123.625L61.625 63.2251L0.225 1.42501C-0.075 1.12501 -0.075 0.525 0.225 0.225C0.525 -0.075 1.12501 -0.075 1.42501 0.225L63.425 62.625C63.725 62.925 63.725 63.525 63.425 63.825L2.32501 124.825C2.12501 124.925 1.925 125.025 1.725 125.025Z"
+                fill="#D2D6DC"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="page-section articles">
+      <div class="container">
+        <h2 class="section-title articles__title main-subtitle">Статьи <sup>*относящиеся к продукту выше</sup></h2>
+        @include('partials/articles-slider.html')
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-import { Swiper } from "swiper/bundle";
+import {Swiper} from 'swiper/bundle'
 
 
 // Инициализация слайдеров
@@ -8,7 +8,7 @@ const captionSwiper = new Swiper('.caption-swiper', {
     prevEl: '.swiper-button-prev',
   },
   slidesPerView: 1,
-});
+})
 
 const swiperNews = new Swiper('.news__swiper', {
   navigation: {
@@ -36,7 +36,7 @@ const swiperNews = new Swiper('.news__swiper', {
     },
   }
 
-});
+})
 
 
 const swiperProducts = new Swiper('.products__swiper', {
@@ -62,7 +62,7 @@ const swiperProducts = new Swiper('.products__swiper', {
       slidesPerView: 4,
     },
   }
-});
+})
 
 const swiperCareers = new Swiper('.careers__swiper', {
   navigation: {
@@ -87,8 +87,7 @@ const swiperCareers = new Swiper('.careers__swiper', {
       spaceBetween: 42
     },
   }
-});
-
+})
 
 
 // const swiperServices = new Swiper('.services__swiper', {
@@ -145,23 +144,37 @@ const swiperArticles = new Swiper('.articles__swiper', {
       slidesPerView: 4,
     },
   }
-});
-//
-//
-// const swiperGallery = new Swiper('.product-gallery__swiper', {
-//   navigation: {
-//     nextEl: '.product-gallery__swiper-button-next',
-//     prevEl: '.product-gallery__swiper-button-prev'
-//   },
-//
-//   spaceBetween: 200,
-//
-//   pagination: {
-//     el: '.product-gallery__pagination',
-//     clickable: 'true',
-//   },
-//
-// });
+})
+
+
+const swiperGallery = new Swiper('.product-gallery__swiper', {
+  navigation: {
+    nextEl: '.product-gallery__swiper-button-next',
+    prevEl: '.product-gallery__swiper-button-prev'
+  },
+
+  pagination: {
+    el: '.product-gallery__pagination',
+    clickable: 'true',
+  },
+  grabCursor: true,
+  slidesPerView: 1,
+  spaceBetween: 60,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+
+    },
+    1200: {
+      slidesPerView: 3,
+
+    },
+    1600: {
+      slidesPerView: 4,
+    },
+  }
+
+})
 //
 //
 // const swiperHistory = new Swiper('.company-history__swiper', {
