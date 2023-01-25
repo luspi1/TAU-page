@@ -4,6 +4,13 @@
 
   .swiper-wrapper {
     margin-bottom: 13px;
+    @media (max-width: 1280px) {
+      margin-bottom: 7px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 3px;
+    }
   }
 
   &__img {
@@ -24,6 +31,9 @@
 
   .swiper-slide:hover img {
     transform: scale(1.07);
+    @media (max-width: 1024px) {
+      transform: scale(1.05);
+    }
   }
 
   &__category {
@@ -31,6 +41,15 @@
     display: inline-block;
     margin-top: 22px;
     margin-bottom: 15px;
+    @media (max-width: 1280px) {
+      margin-top: 16px;
+      margin-bottom: 9px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 12px;
+      margin-bottom: 5px;
+    }
   }
 
   &__text {
@@ -40,6 +59,14 @@
 
   &__date {
     margin-top: 12px;
+
+    @media (max-width: 1280px) {
+      margin-top: 6px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 2px;
+    }
   }
 
   .articles__swiper-panel {
@@ -47,18 +74,18 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    .articles__btn{
+    .articles__btn {
       background: none;
       border: none;
       color: #5141B3;;
       cursor: pointer;
       transition: all .3s;
       padding: 0;
+
       &:hover {
         color: $purple-main-hover;
       }
     }
-
 
   }
 

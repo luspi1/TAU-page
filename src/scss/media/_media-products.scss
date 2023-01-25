@@ -2,132 +2,12 @@
   .products-main {
     padding-bottom: 85px;
   }
-
-  .products-main .products-main__path .products-main__path-svg {
-    width: 1330px;
-    height: 115%;
-  }
-  .products-main .game-item {
-    padding-left: 250px;
-    height: 625px;
-  }
-
-  .products-main .game-item.game-item_right {
-    padding-right: 250px;
-  }
-
-  .products-main .game-item__content {
-    width: 50%;
-    position: relative;
-    margin-right: 230px;
-  }
-
-  .products-main .game-item__title {
-    max-width: 600px;
-  }
-  .products-main .game-item.game-item_right .game-item__content {
-    margin-left: 200px;
-  }
-
-
-  .products-main .game-item__img {
-    width: 50%;
-  }
-
-
-  .products-main .game-item__img-wrapper {
-    height: 270px;
-    width: 280px;
-  }
-
-
-  .products-main .products-main__path .prompt1 {
-    top: -103px;
-  }
-  .products-main .products-main__path .prompt2 {
-    left: 31%;
-    top: 590px;
-  }
-  .products-main .products-main__path .prompt3 {
-    top: 578px;
-  }
-  .products-main .products-main__path .prompt4 {
-    top: 1196px;
-  }
 }
 
 @media (max-width: 1440px) {
   .products-main__menu {
     width: 100%;
   }
-
-  .products-main .products-main__path .products-main__path-svg {
-    width: 1200px;
-    height: 116%;
-  }
-
-  .products-main .game-item {
-    padding-left: 180px;
-    height: 560px;
-  }
-
-  .products-main .game-item.game-item_right {
-    padding-right: 180px;
-  }
-
-  .products-main .game-item__content {
-    width: 80%;
-  }
-
-  .products-main .game-item__title {
-    max-width: 600px;
-  }
-
-  .products-main .game-item.game-item_right .game-item__img-wrapper {
-    left: 12px;
-  }
-
-  .products-main .game-item.game-item_right .game-item__img::after {
-    left: -70px;
-  }
-
-
-  .products-main .game-item.game-item_right .game-item__hover-video::after {
-    width: 102%;
-    height: 102%;
-    left: -4px;
-    top: -1px;
-  }
-
-
-  .products-main .game-item__img::after {
-    height: 340px;
-  }
-
-  .products-main .game-item__hover-video video {
-    border-radius: 35px;
-  }
-
-
-  .products-main .game-item.game-item_right .game-item__img:hover .game-item__hover-video {
-    transform: translateX(-10px);
-  }
-  .products-main .game-item__img {
-    width: 62%;
-  }
-
-  .products-main .products-main__path .prompt2 {
-    top: 523px;
-  }
-
-  .products-main .products-main__path .prompt3 {
-    top: 510px;
-  }
-
-  .products-main .products-main__path .prompt4 {
-    top: 1070px;
-  }
-
 }
 
 @media (max-width: 1280px) {
@@ -147,165 +27,19 @@
     margin-bottom: 44px;
   }
 
-
   .products-main__desc p {
     margin-bottom: 42px;
   }
 
-
-  .products-main .game-item__title {
-    margin-bottom: 19px;
-  }
-  .products-main .game-item__text {
-    margin-bottom: 10px;
-  }
-
-  .products-main .game-item__features-list {
-    margin-bottom: 10px;
-  }
-
-
-  .products-main .products-main__path .products-main__path-svg {
-    width: 1010px;
-    height: 117%;
-  }
-
-  .products-main .game-item {
-    height: 470px;
-  }
-
-  .products-main .game-item__img {
-    width: 50%;
-  }
-
-  .products-main .game-item__content {
-    width: 90%;
-    margin-right: 85px;
-  }
-
-
-  .products-main .game-item__img-wrapper {
-    width: 220px;
-    height: 210px;
-  }
-  .products-main .game-item__hover-video video {
-    border-radius: 30px;
-  }
-
-
-  .products-main .game-item.game-item_right .game-item__content {
-    margin-left: 110px;
-  }
-
-
-  .products-main .game-item.game-item_right .game-item__img-wrapper {
-    left: -15px;
-  }
-
-  .products-main .game-item__img::after {
-    width: 433px;
-    height: 252px;
-    border-radius: 50px 0 0 50px;
-  }
-
-  .products-main .products-main__path .prompt1 {
-    top: -101px;
-  }
-
-  .products-main .products-main__path .products-main__prompt {
-    width: 40px;
-  }
-
-  .products-main .products-main__path .prompt2 {
-    left: 27%;
-    top: 424px;
-  }
-  .products-main .products-main__path .prompt3 {
-    top: 417px;
-  }
-  .products-main .products-main__path .prompt4 {
-    top: 885px;
-  }
-
-
-  .articles {
+  .products-page__articles {
     padding: 58px 0 64px;
   }
 
-  .articles .articles-swiper__date {
-    margin-top: 6px;
-  }
-
-  .articles h2 {
+  .products-page__articles h2 {
     margin-bottom: -16px;
   }
-
-  .articles .articles-swiper__category {
-    margin-top: 16px;
-    margin-bottom: 9px;
-  }
-
-
-  .articles .articles-swiper .swiper-wrapper {
-    margin-bottom: 7px;
-  }
-
-  .check-careers {
-    padding: 62px 0 69px;
-  }
-
-  .check-careers .container {
-    flex-direction: column;
-  }
-
-  .check-careers__title {
-    text-align: center;
-    max-width: 80%;
-    margin-right: 0;
-    margin-bottom: 42px;
-  }
-  .check-careers__btn {
-    margin-top: 0;
-  }
 }
 
-@media (max-width: 1200px) {
-  .products-main .game-item {
-    padding-left: 150px;
-  }
-  .products-main .game-item.game-item_right {
-    padding-right: 150px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .products-main .game-item {
-    padding-left: 110px;
-  }
-  .products-main .game-item.game-item_right {
-    padding-right: 110px;
-  }
-
-  .products-main .game-item__content {
-    width: 95%;
-    margin-right: 50px;
-  }
-  .products-main .game-item.game-item_right .game-item__content {
-    margin-left: 70px;
-  }
-
-  .products-main .game-item.game-item_right .game-item__img-wrapper {
-    left: 44px;
-  }
-  .products-main .game-item.game-item_right .game-item__img::after {
-    left: -40px;
-  }
-  .products-main .game-item__img::after {
-    left: -25px;
-  }
-
-
-}
 
 @media (max-width: 1024px) {
   .products-main__path {
@@ -324,112 +58,16 @@
     margin-bottom: 30px;
   }
 
-
   .products-main__desc p {
     margin-bottom: 38px;
   }
 
-  .products-main .game-item {
-    flex-direction: column;
-    margin-bottom: 170px;
-    padding: 0;
-    height: auto;
-  }
-
-  .products-main .products-main__items-container {
-    max-width: 1084px;
-    padding: 0 30px;
-    margin: 0 auto;
-  }
-
-  .products-main .game-item__content {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-  .products-main .game-item__title {
-    max-width: 100%;
-    margin-bottom: 15px;
-  }
-
-
-  .products-main .game-item.game-item_right .game-item__content {
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-
-  .products-main .game-item.game-item_right {
-    padding-right: 0;
-  }
-
-  .products-main .game-item.game-item_right .game-item__img:hover .game-item__hover-video {
-    display: none;
-  }
-
-  .products-main .game-item__img {
-    width: 26%;
-    display: flex;
-    justify-content: center;
-    order: -1;
-    margin-bottom: 140px;
-  }
-
-  .products-main .container {
-    margin-bottom: 180px;
-  }
-
-  .products-main .game-item.game-item_right .game-item__img-wrapper {
-    left: 0;
-    top: 0;
-  }
-
-  .products-main .game-item__hover-video {
-    display: none;
-  }
-
-  .products-main .game-item.game-item_right .game-item__hover-video {
-    display: none;
-  }
-
-  .products-main .game-item__img::after {
-    display: none;
-  }
-
-  .articles {
+  .products-page__articles {
     padding: 45px 0 51px;
   }
-  .articles h2 {
-    margin-bottom: -20px;
+  .products-page__articles h2 {
+    margin-bottom: -10px;
   }
-
-
-  .articles .articles-swiper .swiper-slide:hover img {
-    transform: scale(1.05);
-  }
-
-  .articles .articles-swiper__category {
-    margin-top: 12px;
-    margin-bottom: 5px;
-  }
-
-  .articles .articles-swiper .swiper-wrapper {
-    margin-bottom: 3px;
-  }
-
-  .articles .articles-swiper__date {
-    margin-top: 2px;
-  }
-
-
-  .check-careers__title {
-    max-width: 90%;
-    margin-bottom: 38px;
-  }
-
-  .check-careers {
-    padding: 49px 0 56px;
-  }
-
 }
 
 @media (max-width: 768px) {
@@ -441,44 +79,16 @@
     margin-bottom: 160px;
   }
 
-  .products-main .game-item__img {
-    width: 34%;
-  }
-
-
-  .products-main .game-item__text {
-    margin-bottom: 25px;
-  }
-
-  .articles h2 {
+  .products-page__articles h2 {
     margin-bottom: -12px;
   }
 
 
-  .check-careers__title {
-    max-width: 100%;
-    line-height: 48px;
-  }
-
-  .check-careers__btn {
-    padding: 20px 10px;
-    width: 250px;
+  .products-page__articles h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
   }
 
 }
 
-@media (max-width: 500px) {
-  .check-careers__btn {
-    padding: 12px 27px;
-  }
-
-  .products-main .game-item__img {
-    width: 54%;
-  }
-}
-
-@media (max-width: 400px) {
-  .products-main .game-item__img {
-    width: 75%;
-  }
-}
