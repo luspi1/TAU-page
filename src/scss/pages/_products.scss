@@ -57,6 +57,7 @@
 
   &__items {
     padding-bottom: 150px;
+    overflow: hidden;
     .container {
       padding: 0 210px;
       position: relative;
@@ -73,20 +74,19 @@
   .products-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     &:not(:last-child) {
-      margin-bottom: 180px;
+      margin-bottom: 195px;
     }
 
     &.products-item_left {
       .products-item__img {
         order: 2;
-        margin-right: 0;
-        margin-left: 150px;
       }
     }
 
     &__content {
-      max-width: 550px;
+      width: 44%;
     }
 
     &__content-title {
@@ -106,10 +106,10 @@
     }
 
     &__img {
-      margin-right: 315px;
-      min-width: 376px;
+      width: 30%;
       position: relative;
       padding-top: 28%;
+      border-radius: 5px;
       img {
         position: absolute;
         top: 0;
@@ -118,6 +118,7 @@
         bottom: 0;
         width: 100%;
         height: 100%;
+        border-radius: 5px;
       }
     }
   }
