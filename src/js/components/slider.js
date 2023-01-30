@@ -355,6 +355,6 @@ const swiperGallery = new Swiper('.product-gallery__swiper', {
 // });
 //
 //
-// export { swiperWork, swiperCareersWork }
+ export { swiperArticles }
 
 
