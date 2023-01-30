@@ -1,0 +1,145 @@
+@media (max-width: 1280px) {
+
+  .careers-page {
+    padding-top: 86px;
+    padding-bottom: 26px;
+  }
+
+  .careers-page .careers-caption__top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+  }
+
+  .careers-page .careers-caption__title {
+    margin-right: 0;
+    margin-bottom: 42px;
+  }
+
+
+  .careers-page .careers-caption__list {
+    height: 647px;
+  }
+
+  .careers-page .careers-caption__list-item {
+    margin-bottom: 22px;
+    padding: 14px 30px;
+  }
+
+  .careers-page .careers-work {
+    padding: 32px 0 25px 0;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .careers-page {
+    padding-top: 62px;
+    padding-bottom: 10px;
+  }
+
+  .careers-page .careers-caption__inner {
+    flex-direction: column;
+  }
+  .careers-page .careers-caption__title {
+    margin-bottom: 26px;
+  }
+
+  .careers-page .careers-caption__top {
+    margin-bottom: 38px;
+  }
+
+  .careers-page .careers-caption__menu {
+    display: flex;
+    width: 100%;
+    order: -1;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .careers-page .careers-caption__list {
+    height: 448px;
+    width: 100%;
+  }
+
+  .careers-page .careers-caption__list-item {
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 18px;
+  }
+
+  .careers-page .careers-work {
+    padding: 20px 0 0 0;
+  }
+
+  .careers-page .careers-work {
+    padding: 35px 0 25px 0;
+  }
+
+
+  .careers-page .careers-work__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .careers-page .careers-work__menu {
+    margin-bottom: 10px;
+  }
+
+  .careers-page .careers-caption__application a {
+    padding: 18px 15px 22px;
+  }
+
+  .careers-page .careers-work__title {
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .careers-page .careers-caption__list {
+    margin-right: 0;
+    height: 355px;
+    padding-right: 30px;
+  }
+
+  .products-page__articles-container {
+    padding: 0 15px;
+  }
+
+  .careers-page .careers-caption__list-item {
+    width: 100%;
+  }
+
+  .careers-page .careers-work__menu {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .careers-page .careers-work__menu .careers-work__menu-btn {
+    border-radius: 30px;
+    padding: 5px 15px;
+  }
+  .careers-page .careers-caption__item-title {
+    word-wrap: break-word;
+  }
+  .careers-page .careers-work__title span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .careers-page .careers-caption__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .careers-page .careers-caption__list {
+    height: 274px;
+  }
+}

@@ -1,5 +1,5 @@
 import { removeClasses, filterByCategory } from "../_functions";
-import { swiperWork, swiperCareersWork } from "./slider";
+import { swiperWork, swiperArticles } from "./slider";
 
 const productBtns = document.querySelectorAll('.products-main__menu-btn')
 const blogBtns = document.querySelectorAll('.blog-caption__menu-btn')
@@ -11,7 +11,7 @@ const workSlides = document.querySelectorAll('.work-swiper__slide')
 
 
 const careersWorkBtns = document.querySelectorAll('.careers-work__menu-btn')
-const careersWorkSlides = document.querySelectorAll('.careers-work-swiper__slide')
+const careersWorkSlides = document.querySelectorAll('.articles-swiper .swiper-slide')
 
 // Переключения активных вкладок меню фильтрации продуктов
 
@@ -44,8 +44,8 @@ careersWorkBtns.forEach(btn => {
     e.preventDefault()
     removeClasses('careers-work__menu-btn_active')
     btn.classList.add('careers-work__menu-btn_active')
-    swiperCareersWork.removeAllSlides()
-    swiperCareersWork.appendSlide(filterByCategory(careersWorkSlides, btn.dataset.filter))
+    swiperArticles.removeAllSlides()
+    swiperArticles.appendSlide(filterByCategory(careersWorkSlides, btn.dataset.filter))
 
   })
 })

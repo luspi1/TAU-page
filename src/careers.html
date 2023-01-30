@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Карьера'
+})
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+
+  <main class="main careers-page">
+    <section class="section careers-page__caption careers-caption">
+      <div class="container">
+        <div class="careers-caption__top">
+          <h1 class="careers-caption__title main-title">Карьера</h1>
+          <p class="accent-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic illum molestiae molestias
+            mollitia nobis odio ullam. Ad, commodi ducimus exercitationem impedit maxime molestiae provident quidem quis
+            temporibus ut voluptas voluptates?</p>
+        </div>
+
+
+        <div class="careers-caption__inner">
+          <ul class="careers-caption__list">
+            <li class="careers-caption__list-item" data-career="career1">
+              <h3 class="careers-caption__item-title accent-text">Менеджер отдела продаж</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career2">
+              <h3 class="careers-caption__item-title accent-text">Менеджер отдела продаж</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career3">
+              <h3 class="careers-caption__item-title accent-text">Инженер производственного отдела</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career4">
+              <h3 class="careers-caption__item-title accent-text">Инженер производственного отдела</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career5">
+              <h3 class="careers-caption__item-title accent-text">Менеджер отдела продаж</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career6">
+              <h3 class="careers-caption__item-title accent-text">Научный сотрудник (археолог)</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career7">
+              <h3 class="careers-caption__item-title accent-text">Инженер производственного отдела</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career8">
+              <h3 class="careers-caption__item-title accent-text">Инженер производственного отделаd</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career9">
+              <h3 class="careers-caption__item-title accent-text">Научный сотрудник (археолог)</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+            <li class="careers-caption__list-item" data-career="career10">
+              <h3 class="careers-caption__item-title accent-text">Менеджер отдела продаж</h3>
+              <p class="careers-caption__item-text">Место работы, тип занятости</p>
+            </li>
+          </ul>
+          <ul class="careers-caption__menu">
+            <li>
+              <button
+                class="careers-caption__menu-btn main-link careers-caption__menu-btn_active">
+                Все вакансии
+              </button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 1</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 2</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 3</button>
+            </li>
+            <li>
+              <button
+                class="careers-caption__menu-btn main-link">Специализация 4
+              </button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 5</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 6</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 7</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 8</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 9</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 10</button>
+            </li>
+            <li>
+              <button class="careers-caption__menu-btn main-link">Специализация 11</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section careers-work">
+      <div class="container">
+        <div class="careers-work__top">
+          <h2 class="careers-work__title main-subtitle">Статьи <span>*относящиеся к вакансиям</span></h2>
+          <ul class="careers-work__menu">
+            <li class="careers-work__menu-item">
+              <button
+                class="careers-work__menu-btn main-link careers-work__menu-btn_active"
+                data-filter="all" type="button">Все
+              </button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn main-link"
+                      data-filter="tag-1" type="button">Тег 1
+              </button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn main-link"
+                      data-filter="tag-2" type="button">Тег 2
+              </button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn main-link"
+                      data-filter="tag-3" type="button">Тег 3
+              </button>
+            </li>
+            <li class="careers-work__menu-item">
+              <button class="careers-work__menu-btn main-link"
+                      data-filter="tag-4" type="button">Тег 4
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container careers-page__swiper-container">
+        @include('partials/articles-slider.html')
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>
