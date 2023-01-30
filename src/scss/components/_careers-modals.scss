@@ -1,0 +1,746 @@
+// Главный экрна модалки
+.careers-modal {
+  position: fixed;
+  top: 0;
+  background: #FFFFFF;
+  width: 71%;
+  height: 100%;
+  right: 0;
+  transition: all .3s;
+  padding-top: 50px;
+  z-index: -1;
+  opacity: 0;
+  overflow: auto;
+  visibility: hidden;
+
+  &__wrapper {
+    padding: 0 60px 40px 59px;
+  }
+
+  &._active {
+    z-index: 999999;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__back-btn {
+    color: #9196A0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 74px;
+    padding-left: 51px;
+    transition: all .3s;
+
+    &:hover {
+      color: $purple-main-hover;
+    }
+
+    &:hover svg path {
+      fill: $purple-main-hover;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      path {
+        transition: all .3s;
+      }
+    }
+  }
+
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    margin-right: 60px;
+    width: 360px;
+
+    p {
+      color: #1C283A;
+      margin-bottom: 51px;
+    }
+  }
+
+  &__desc-btn {
+    width: 304px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 19px 25px;
+    background: $purple-main;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 28px;
+
+    &:hover {
+      background: $purple-main-hover;
+    }
+  }
+
+  &__rec-btn {
+    background: #ffffff;
+    color: #A5B4C4;
+    border: 1px solid #A5B4C4;
+    padding: 19px 33px;
+
+    &:hover {
+      color: #FFFFFF;
+      border-color: transparent;
+      background: $purple-main-hover;
+    }
+  }
+
+  &__lists {
+    width: 60%;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+
+    li {
+      margin-bottom: 1px;
+    }
+
+  }
+
+  p.careers-modal__list-title {
+    margin-bottom: 5px;
+    color: #1C283A;
+  }
+
+
+  &__list-text {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -25px;
+      top: 14px;
+      background-color: $purple-main;
+      width: 16px;
+      height: 1px;
+    }
+  }
+
+  &__materials {
+    background: #F3F3F3;
+    padding: 50px 0 12px;
+  }
+
+  &__swiper-title {
+    margin-bottom: 20px;
+  }
+
+  .careers-modals-swiper {
+    overflow: hidden;
+
+    .swiper-wrapper {
+      margin-bottom: 17px;
+    }
+
+    .swiper-slide {
+      transition: all .3s;
+      border-radius: 10px;
+      padding-bottom: 24px;
+      background-color: #ffffff;
+
+      &__wrapper {
+        padding: 0 21px 0 17px;
+      }
+    }
+
+    &__category {
+      color: $purple-main;
+      display: inline-block;
+      margin-top: 22px;
+      margin-bottom: 14px;
+    }
+
+    &__content {
+      position: relative;
+    }
+
+    &__caption {
+      max-width: 377px;
+      color: #1C283A;
+      transition: all .3s;
+    }
+
+
+    &__swiper-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__swiper-controls {
+      height: 35px;
+      display: flex;
+      align-items: center;
+    }
+
+
+    &__swiper-button-prev,
+    &__swiper-button-next {
+      background: none;
+      border: none;
+      width: 55px;
+      height: 25px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &__swiper-button-next {
+      margin-left: 5px;
+    }
+
+    &__swiper-button-prev svg path,
+    &__swiper-button-next svg path {
+      transition: all .3s;
+    }
+
+    &__swiper-button-prev:hover svg path,
+    &__swiper-button-next:hover svg path {
+      fill: $purple-main-hover;
+    }
+
+    &__btn {
+      background: none;
+      border: none;
+      color: $purple-main;
+      cursor: pointer;
+      transition: all .3s;
+      padding: 0;
+
+      &:hover {
+        color: $purple-main-hover;
+      }
+    }
+  }
+}
+
+.careers-modal__main {
+  display: none;
+
+  &._active {
+    display: block;
+  }
+}
+
+// Форма модалки
+
+.careers-form {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+  padding-right: 50px;
+
+  &._active {
+    display: block;
+  }
+
+  &__form {
+    padding-bottom: 40px;
+
+  }
+
+
+  &__back-btn {
+    color: #9196A0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 74px;
+    padding-left: 51px;
+    transition: all .3s;
+
+    &:hover {
+      color: $purple-main-hover;
+    }
+
+    &:hover svg path {
+      fill: $purple-main-hover;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      path {
+        transition: all .3s;
+      }
+    }
+  }
+
+  &__title {
+    color: #1C283A;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    padding: 22px 20px 22px 0;
+    width: 100%;
+    @include montserrat-regular;
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid #A5B4C4;
+    background: none;
+    transition: all .3s;
+    outline: none;
+    margin-bottom: 32px;
+
+    &:focus {
+      border-bottom: 1px solid $purple-main-hover;
+    }
+
+
+    &::placeholder {
+      @include montserrat-light;
+      color: #A5B4C4;
+    }
+  }
+
+  &__file-inputs {
+    display: flex;
+    align-items: flex-end;
+
+    .careers-form__input {
+      margin-bottom: 22px;
+    }
+
+    .careers-form__link-wrapper {
+      margin-right: 25px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: -13px;
+        top: 20px;
+
+        rect {
+          transition: all .3s;
+        }
+      }
+
+      input:focus + svg rect {
+        fill: $purple-main-hover;
+      }
+
+    }
+
+    .careers-form__link-wrapper,
+    .careers-form__input-file {
+      width: 50%;
+    }
+  }
+
+
+  .careers-form__input-file {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("../img/download-icon.png") no-repeat;
+    }
+  }
+
+  .careers-form__file-text {
+    @include montserrat-light;
+    color: #A5B4C4;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding-right: 15px;
+  }
+
+  .careers-form__input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  .careers-form__add-message-btn {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+
+    .careers-form__svg-bg {
+      transition: all .3s;
+    }
+
+    &:hover {
+      .careers-form__svg-bg {
+        fill: $purple-main-hover;
+      }
+    }
+
+    svg {
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+
+  &__input-textarea {
+    display: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    resize: none;
+    width: 100%;
+    line-height: 32px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #A5B4C4;
+
+    &:focus {
+      border: 1px solid $purple-main-hover;
+    }
+
+    &.careers-form__input-textarea_active {
+      display: block;
+    }
+  }
+
+  &__checkbox-wrapper {
+    margin-bottom: 50px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    & + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+      color: #666666;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    & + label::before {
+      content: '';
+      display: inline-block;
+      width: 33px;
+      height: 33px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #A5B4C4;
+      margin-right: 19px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 15px 15px;
+    }
+
+    &:checked + label::before {
+      background-image: url("../img/careers-mark.png");
+    }
+  }
+
+  &__submit-btn {
+    background: #FFFFFF;
+    border: 1px solid #A5B4C4;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #A5B4C4;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 19px 115px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $purple-main-hover;
+      border-color: transparent;
+    }
+
+  }
+
+
+}
+
+
+// Адаптив
+
+@media (max-width: 1650px) {
+  .careers-modal__content {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1280px) {
+  .careers-modal__wrapper {
+    padding: 0 30px 24px 30px;
+  }
+
+  .careers-modal {
+    padding-top: 35px;
+    width: 70%;
+  }
+
+  .careers-modal__back-btn {
+    margin-bottom: 56px;
+  }
+
+  .careers-modal__title {
+    margin-bottom: 19px;
+  }
+
+  .careers-modal__desc p {
+    margin-bottom: 35px;
+  }
+
+  .careers-modal__desc-btn {
+    margin-bottom: 22px;
+  }
+
+  .careers-modal__materials {
+    padding: 34px 0 12px;
+  }
+
+  .careers-modal__swiper-title {
+    margin-bottom: 14px;
+  }
+
+  .careers-modal .careers-modals-swiper__category {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .careers-modal .careers-modals-swiper .swiper-slide {
+    padding-bottom: 18px;
+  }
+  .careers-modal .careers-modals-swiper .swiper-wrapper {
+    margin-bottom: 11px;
+  }
+
+  .careers-form__back-btn {
+    margin-bottom: 56px;
+  }
+
+  .careers-form__title {
+    margin-bottom: 14px;
+  }
+
+  .careers-form__input {
+    padding: 16px 20px 16px 0;
+    margin-bottom: 22px;
+  }
+
+  .careers-form__input-textarea {
+    padding-left: 10px;
+    margin-bottom: 18px
+  }
+
+  .careers-form__file-inputs .careers-form__input {
+    margin-bottom: 16px;
+  }
+
+  .careers-form .careers-form__add-message-btn {
+    margin-bottom: 13px;
+  }
+
+  .careers-form__checkbox-wrapper {
+    margin-bottom: 36px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .careers-modal__back-btn {
+    margin-bottom: 42px;
+  }
+
+  .careers-modal__wrapper {
+    padding: 0 30px 20px 30px;
+  }
+  .careers-modal {
+    padding-top: 31px;
+    width: 75%;
+  }
+
+  .careers-modal__title {
+    margin-bottom: 15px;
+  }
+
+  .careers-modal__desc p {
+    margin-bottom: 31px;
+  }
+
+  .careers-modal__desc-btn {
+    padding: 15px 5px;
+    border-radius: 40px;
+    margin-bottom: 18px;
+    width: 280px;
+  }
+
+  .careers-modal__rec-btn {
+    padding: 14px 18px;
+  }
+
+  .careers-modal__desc {
+    margin-right: 50px;
+    width: 278px;
+  }
+
+  .careers-modal__list {
+    margin-bottom: 20px;
+  }
+
+  .careers-form__title {
+    margin-bottom: 30px;
+  }
+
+  .careers-modal__materials {
+    padding: 30px 0 12px;
+  }
+
+  .careers-modal__swiper-title {
+    margin-bottom: 10px;
+  }
+
+
+  .careers-modal .careers-modals-swiper__category {
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+
+  .careers-modal .careers-modals-swiper .swiper-slide {
+    padding-bottom: 14px;
+  }
+
+  .careers-modal .careers-modals-swiper .swiper-wrapper {
+    margin-bottom: 7px;
+  }
+
+
+  .careers-form__back-btn {
+    margin-bottom: 42px;
+  }
+
+  .careers-form__title {
+    margin-bottom: 10px;
+  }
+  .careers-form__input {
+    padding: 12px 20px 12px 0;
+  }
+  .careers-form__input-textarea {
+    padding-left: 10px;
+    margin-top: 9px;
+    margin-bottom: 14px;
+  }
+
+
+  .careers-form__file-inputs .careers-form__input {
+    margin-bottom: 12px;
+  }
+
+  .careers-form .careers-form__add-message-btn {
+    margin-bottom: 0;
+  }
+
+  .careers-form__checkbox-wrapper {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .careers-modal {
+    width: 100%;
+  }
+
+
+  .careers-modal__content {
+    flex-direction: column;
+  }
+  .careers-modal__desc {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .careers-modal__lists {
+    width: 100%;
+    padding-left: 26px;
+  }
+
+  .careers-form__file-inputs {
+    flex-direction: column;
+  }
+
+  .careers-form__file-inputs .careers-form__link-wrapper svg {
+    display: none;
+  }
+
+  .careers-form__file-inputs .careers-form__link-wrapper {
+    margin-right: 0;
+  }
+
+  .careers-form__file-inputs .careers-form__link-wrapper,
+  .careers-form__file-inputs .careers-form__input-file {
+    width: 100%;
+  }
+
+
+  .careers-form__submit-btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    padding: 20px 100px;
+  }
+
+}

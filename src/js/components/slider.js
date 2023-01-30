@@ -89,35 +89,6 @@ const swiperCareers = new Swiper('.careers__swiper', {
   }
 })
 
-
-// const swiperServices = new Swiper('.services__swiper', {
-//   navigation: {
-//     nextEl: '.services__swiper-button-next',
-//     prevEl: '.services__swiper-button-prev'
-//   },
-//
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 15
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     1280: {
-//       slidesPerView: 3,
-//       spaceBetween: 40
-//     },
-//     1440: {
-//       spaceBetween: 50,
-//       slidesPerView: 4,
-//     }
-//   }
-// });
-
 //
 const swiperArticles = new Swiper('.articles__swiper', {
   navigation: {
@@ -175,186 +146,39 @@ const swiperGallery = new Swiper('.product-gallery__swiper', {
   }
 
 })
-//
-//
-// const swiperHistory = new Swiper('.company-history__swiper', {
-//   navigation: {
-//     nextEl: '.company-history__swiper-button-next',
-//     prevEl: '.company-history__swiper-button-prev'
-//   },
-//
-//   noSwiping: true,
-//   noSwipingClass: 'swiper-no-swiping',
-//
-//   slidesPerView: 1,
-//   spaceBetween: 20,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     1280: {
-//       spaceBetween: 42,
-//       slidesPerView: 4,
-//     },
-//   }
-// });
-//
-// const swiperOffice = new Swiper('.company-office__swiper', {
-//   navigation: {
-//     nextEl: '.company-office__swiper-button-next',
-//     prevEl: '.company-office__swiper-button-prev'
-//   },
-//   slidesPerView: 1.41,
-//   centeredSlides: true,
-//   spaceBetween: 35,
-//   initialSlide: 1,
-//   breakpoints: {
-//     1024: {
-//       slidesPerView: 1.6,
-//       spaceBetween: 35
-//     },
-//     1280: {
-//       spaceBetween: 35,
-//       slidesPerView: 1.41,
-//     },
-//   },
-//   pagination: {
-//     el: '.company-office__pagination',
-//     type: 'fraction',
-//   },
-// });
-//
-// const swiperWork = new Swiper('.company-work__swiper', {
-//   navigation: {
-//     nextEl: '.company-work__swiper-button-next',
-//     prevEl: '.company-work__swiper-button-prev'
-//   },
-//
-//   noSwiping: true,
-//   noSwipingClass: 'swiper-no-swiping',
-//   observer: true,
-//
-//   slidesPerView: 1,
-//   spaceBetween: 35,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 25
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     1280: {
-//       spaceBetween: 42,
-//       slidesPerView: 4,
-//     },
-//   }
-// });
-//
-//
-// const swiperBlogItem = new Swiper('.blog-item__swiper', {
-//   navigation: {
-//     nextEl: '.blog-item__swiper-button-next',
-//     prevEl: '.blog-item__swiper-button-prev'
-//   },
-//   spaceBetween: 210,
-// });
-//
-// const swiperMoreArticles = new Swiper('.more-articles-swiper', {
-//
-//   navigation: {
-//     nextEl: '.more-articles-swiper__swiper-button-next',
-//     prevEl: '.more-articles-swiper__swiper-button-prev'
-//   },
-//
-//   noSwiping: true,
-//   noSwipingClass: 'swiper-no-swiping',
-//
-//   slidesPerView: 1,
-//   spaceBetween: 35,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 25
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     1280: {
-//       spaceBetween: 42,
-//       slidesPerView: 4,
-//     },
-//   }
-// });
-//
-//
-// const swiperCareersWork = new Swiper('.careers-work__swiper', {
-//   navigation: {
-//     nextEl: '.careers-work__swiper-button-next',
-//     prevEl: '.careers-work__swiper-button-prev'
-//   },
-//
-//   noSwiping: true,
-//   noSwipingClass: 'swiper-no-swiping',
-//   observer: true,
-//
-//   slidesPerView: 1,
-//   spaceBetween: 25,
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 25
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     1280: {
-//       spaceBetween: 42,
-//       slidesPerView: 4,
-//     },
-//   }
-// });
-//
-//
-// const swiperCareersModal = new Swiper('.careers-modals-swiper', {
-//
-//   navigation: {
-//     nextEl: '.careers-modals-swiper__swiper-button-next',
-//     prevEl: '.careers-modals-swiper__swiper-button-prev'
-//   },
-//
-//   noSwiping: true,
-//   noSwipingClass: 'swiper-no-swiping',
-//
-//
-//   breakpoints: {
-//     400: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     1280: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     1450: {
-//       slidesPerView: 3,
-//       spaceBetween: 18
-//     },
-//   }
-// });
-//
-//
+
+
+const swiperCareersModal = new Swiper('.careers-modals-swiper', {
+
+  navigation: {
+    nextEl: '.careers-modals-swiper__swiper-button-next',
+    prevEl: '.careers-modals-swiper__swiper-button-prev'
+  },
+
+  noSwiping: true,
+  noSwipingClass: 'swiper-no-swiping',
+
+
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1450: {
+      slidesPerView: 3,
+      spaceBetween: 18
+    },
+  }
+});
+
+
  export { swiperArticles }
 
 
