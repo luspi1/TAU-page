@@ -1,5 +1,5 @@
 import { removeClasses, filterByCategory } from "../_functions";
-import { swiperWork, swiperArticles } from "./slider";
+import { swiperArticles } from "./slider";
 
 const productBtns = document.querySelectorAll('.products-main__menu-btn')
 const blogBtns = document.querySelectorAll('.blog-caption__menu-btn')
