@@ -4,7 +4,7 @@ import { swiperArticles } from "./slider";
 const productBtns = document.querySelectorAll('.products-main__menu-btn')
 const blogBtns = document.querySelectorAll('.blog-caption__menu-btn')
 const careersBtns = document.querySelectorAll('.careers-caption__menu-btn')
-const articlesBtns = document.querySelectorAll('.articles-page__menu-btn')
+const articlesBtns = document.querySelectorAll('.blog-page__menu-btn')
 
 const workBtns = document.querySelectorAll('.company-work__menu-btn')
 const workSlides = document.querySelectorAll('.work-swiper__slide')
@@ -77,8 +77,8 @@ careersBtns.forEach(btn => {
 articlesBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.preventDefault()
-    removeClasses('articles-page__menu-btn_active')
-    btn.classList.add('articles-page__menu-btn_active')
+    removeClasses('blog-page__menu-btn_active')
+    btn.classList.add('blog-page__menu-btn_active')
   })
 })
 
