@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Блог'
+})
+
+<body class="page__body blog-body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+
+  <main class="main blog-page">
+    <section class="section">
+      <div class="container">
+        <div class="blog-page__inner">
+          <div class="blog-page__content">
+            <div class="blog-page__main-img">
+              <img src="img/blog_main.png" alt="blog main image">
+            </div>
+            <h1 class="blog-page__title main-subtitle">
+              Название “главной” статьи
+            </h1>
+            <div class="blog-page__main-info">
+              <a class="category-text" href="#">Рубрика</a>
+              <p class="category-text">08 июня 2022</p>
+            </div>
+            <p class="blog-page__main-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo ...
+            </p>
+
+            <ul class="blog-page__menu">
+              <li class="blog-page__menu-item">
+                <button
+                  class="blog-page__menu-btn main-link blog-page__menu-btn_active">
+                  Все
+                </button>
+              </li>
+              <li class="blog-page__menu-item">
+                <button class="main-link blog-page__menu-btn">Новости</button>
+              </li>
+              <li class="blog-page__menu-item">
+                <button class="main-link blog-page__menu-btn">События
+                </button>
+              </li>
+              <li class="blog-page__menu-item">
+                <button class="main-link blog-page__menu-btn">Продукты</button>
+              </li>
+              <li class="blog-page__menu-item">
+                <button class="main-link blog-page__menu-btn">Компания
+                </button>
+              </li>
+              </ul>
+            <ul class="blog-page__blog-list">
+              <li class="blog-page__list-item">
+                <div class="blog-page__item-img">
+                  <img src="img/blog_blog.jpg" alt="blog article 1">
+                </div>
+                <a href="one-blog.html"
+                   class="blog-page__item-title accent-text">
+                  Статья 1
+                </a>
+                <p class="blog-page__item-desc">
+                  We are a team of over 150 like-minded people based in Tallinn,
+                  Berlin, Oxford, Kirchdorf an der Krems, Moscow.
+                </p>
+                <div class="blog-page__item-info">
+                  <a class="category-text" href="#">Рубрика</a>
+                  <p class="category-text">02 июня 2022</p>
+                </div>
+              </li>
+              <li class="blog-page__list-item">
+                <div class="blog-page__item-img">
+                  <img src="img/blog_blog.jpg" alt="blog article 2">
+                </div>
+                <a href="one-blog.html"
+                   class="blog-page__item-title accent-text">
+                  Статья 2
+                </a>
+                <p class="blog-page__item-desc">
+                  We are a team of over 150 like-minded people based in Tallinn,
+                  Berlin, Oxford, Kirchdorf an der Krems, Moscow.
+                </p>
+                <div class="blog-page__item-info">
+                  <a class="category-text" href="#">Рубрика</a>
+                  <p class="category-text">25 мая 2022</p>
+                </div>
+              </li>
+              <li class="blog-page__list-item">
+                <div class="blog-page__item-img">
+                  <img src="img/blog_blog.jpg" alt="blog article 3">
+                </div>
+                <a href="one-blog.html"
+                   class="blog-page__item-title accent-text">
+                  Статья 3
+                </a>
+                <p class="blog-page__item-desc">
+                  We are a team of over 150 like-minded people based in Tallinn,
+                  Berlin, Oxford, Kirchdorf an der Krems, Moscow.
+                </p>
+                <div class="blog-page__item-info">
+                  <a class="category-text" href="#">Рубрика</a>
+                  <p class="category-text">12 мая 2022</p>
+                </div>
+              </li>
+              <li class="blog-page__list-item">
+                <div class="blog-page__item-img">
+                  <img src="img/blog_blog.jpg" alt="blog article 4">
+                </div>
+                <a href="one-blog.html"
+                   class="blog-page__item-title accent-text">
+                  Статья 4
+                </a>
+                <p class="blog-page__item-desc">
+                  We are a team of over 150 like-minded people based in Tallinn,
+                  Berlin, Oxford, Kirchdorf an der Krems, Moscow.
+                </p>
+                <div class="blog-page__item-info">
+                  <a class="category-text" href="#">Рубрика</a>
+                  <p class="category-text">05 мая 2022</p>
+                </div>
+              </li>
+            </ul>
+
+            <button class="blog-page__more-btn main-link" type="button">Показать больше +</button>
+          </div>
+          <aside class="blog-aside">
+            <h2 class="blog-aside__subtitle accent-text">
+              Популярные статьи
+            </h2>
+            <ul class="blog-aside__list">
+              <li class="blog-aside__list-item">
+                <div class="blog-aside__item-img">
+                  <img src="img/blog_pop.png" alt="article 1">
+                </div>
+                <div class="blog-aside__item-content">
+                  <a class="title-text" href="#">Статья 1</a>
+                  <p>Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed </p>
+                </div>
+              </li>
+              <li class="blog-aside__list-item">
+                <div class="blog-aside__item-img">
+                  <img src="img/blog_pop.png" alt="article 2">
+                </div>
+                <div class="blog-aside__item-content">
+                  <a class="title-text" href="#">Статья 2</a>
+                  <p>Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed </p>
+                </div>
+              </li>
+              <li class="blog-aside__list-item">
+                <div class="blog-aside__item-img">
+                  <img src="img/blog_pop.png" alt="article 3">
+                </div>
+                <div class="blog-aside__item-content">
+                  <a class="title-text" href="#">Статья 3</a>
+                  <p>Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed </p>
+                </div>
+              </li>
+              <li class="blog-aside__list-item">
+                <div class="blog-aside__item-img">
+                  <img src="img/blog_pop.png" alt="article 4">
+                </div>
+                <div class="blog-aside__item-content">
+                  <a class="title-text" href="#">Статья 4</a>
+                  <p>Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed </p>
+                </div>
+              </li>
+              <li class="blog-aside__list-item">
+                <div class="blog-aside__item-img">
+                  <img src="img/blog_pop.png" alt="article 5">
+                </div>
+                <div class="blog-aside__item-content">
+                  <a class="title-text" href="#">Статья 5</a>
+                  <p>Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipiscing elit, sed </p>
+                </div>
+              </li>
+            </ul>
+            <ul class="blog-aside__banners">
+              <li class="blog-aside__banner">
+                <img src="img/blog_banner.png" alt="banner 1">
+              </li>
+              <li class="blog-aside__banner">
+                <img src="img/blog_banner.png" alt="banner 2">
+              </li>
+              <li class="blog-aside__banner">
+                <img src="img/blog_banner.png" alt="banner 3">
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>
