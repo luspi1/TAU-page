@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Запись в блоге'
+})
+
+<body class="page__body">
+
+<div class="search-overlay"></div>
+<div class="site-container _disabled">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+  <main class="main one-blog">
+    <section class="section blog-caption">
+      <div class="container">
+        <div class="blog-caption__img">
+          <img src="img/one-blog-main.jpg" alt="blog main image">
+        </div>
+        <ul class="blog-caption__menu">
+          <li>
+            <button class="blog-caption__menu-btn main-link">Все</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn main-link">Продукты</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn main-link">Развитие</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn main-link">Блог</button>
+          </li>
+          <li>
+            <button
+              class="blog-caption__menu-btn main-link blog-caption__menu-btn_active">
+              Карьера
+            </button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn main-link">Продукты</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn main-link">Новости</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn main-link">Интервью</button>
+          </li>
+          <li>
+            <button class="blog-caption__menu-btn main-link">Бонусы</button>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section class="blog-content">
+      <div class="container">
+        <article class="blog-item">
+          <div class="blog-item__socials-wrapper">
+            <ul class="blog-item__socials">
+              <li>
+                <a href="#" class="blog-item__socials-link">
+                  <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path class="blog-path__bg" opacity="0.5"
+                          d="M17.0004 33.4H16.7004C7.70039 33.4 0.400391 26.1 0.400391 17.1V16.8C0.400391 7.79999 7.70039 0.5 16.7004 0.5H17.0004C26.0004 0.5 33.3004 7.79999 33.3004 16.8V17.1C33.3004 26.1 26.0004 33.4 17.0004 33.4Z"
+                          fill="#A5B4C4"/>
+                    <path
+                      d="M7.2998 21.6C7.3998 21.4 7.3998 21.1 7.4998 20.9C7.6998 20.2 7.99981 19.5 8.59981 19C9.99981 17.6 11.2998 16.3 12.6998 14.9C14.6998 13 17.9998 13.4 19.4998 15.8V15.9C19.1998 16.2 18.9998 16.5 18.6998 16.7C18.2998 17.1 17.6998 17 17.1998 16.6C16.6998 16.2 16.1998 16 15.5998 16C14.9998 16 14.4998 16.2 14.0998 16.6C12.7998 17.9 11.4998 19.2 10.1998 20.5C9.2998 21.4 9.3998 22.8 10.1998 23.6C11.0998 24.5 12.3998 24.5 13.2998 23.6C14.0998 22.8 14.9998 22 15.7998 21.1C15.8998 21 15.9998 20.9 16.1998 21C16.9998 21.3 17.7998 21.4 18.6998 21.2H18.7998C18.6998 21.3 18.6998 21.3 18.5998 21.4C17.3998 22.6 16.1998 23.8 14.9998 25C14.1998 25.8 13.2998 26.2 12.2998 26.4H12.1998C11.8998 26.4 11.6998 26.4 11.3998 26.4H11.2998C9.4998 26.1 8.19981 25.1 7.59981 23.4C7.49981 23.1 7.3998 22.7 7.3998 22.4C7.2998 22.1 7.2998 21.9 7.2998 21.6Z"
+                      fill="white"/>
+                    <path
+                      d="M26.3002 12.3C26.2002 12.6 26.2002 13 26.1002 13.3C25.9002 13.9 25.6002 14.5 25.1002 14.9C23.7002 16.3 22.4002 17.7 21.0002 19C19.3002 20.7 16.4002 20.6 14.8002 18.8C14.6002 18.6 14.4002 18.3 14.2002 18C14.5002 17.7 14.8002 17.4 15.1002 17.2C15.5002 16.9 16.1002 16.9 16.5002 17.3C16.9002 17.6 17.3002 17.9 17.8002 17.9C18.5002 18 19.2002 17.8 19.7002 17.3C20.5002 16.5 21.3002 15.7 22.1002 14.9C22.6002 14.4 23.1002 14 23.5002 13.5C24.1002 12.9 24.3002 12.1 24.1002 11.3C23.9002 10.5 23.3002 9.89999 22.5002 9.79999C21.7002 9.59999 21.0002 9.80002 20.5002 10.4C19.7002 11.2 18.8002 12.1 18.0002 12.9C17.9002 13 17.8002 13 17.7002 13C16.9002 12.7 16.0002 12.6 15.1002 12.7C15.1002 12.7 15.1002 12.6 15.0002 12.6C15.1002 12.6 15.1002 12.6 15.2002 12.5C16.4002 11.3 17.6002 10.1 18.8002 8.90002C19.6002 8.10002 20.5002 7.7 21.5002 7.5H21.6002C21.9002 7.5 22.1002 7.5 22.4002 7.5H22.5002C24.3002 7.7 25.8002 8.99999 26.3002 10.8C26.4002 11 26.4002 11.3 26.5002 11.5C26.3002 11.8 26.3002 12 26.3002 12.3Z"
+                      fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="blog-item__socials-link">
+                  <svg width="33" height="34" viewBox="0 0 33 34" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                      <path class="blog-path__bg"
+                            d="M16.5 33.5001C25.6127 33.5001 33 26.1127 33 17C33 7.8873 25.6127 0.5 16.5 0.5C7.3873 0.5 0 7.8873 0 17C0 26.1127 7.3873 33.5001 16.5 33.5001Z"
+                            fill="#A5B4C4"/>
+                      <path
+                        d="M24.6633 9.8789L21.7107 24.8158C21.7107 24.8158 21.3633 25.8579 20.1475 25.3368L13.3739 20.1263L10.9422 18.9105L6.77377 17.521C6.77377 17.521 6.0791 17.3473 6.0791 16.8263C6.0791 16.3052 6.77377 16.1315 6.77377 16.1315L23.2738 9.70525C23.2738 9.53157 24.6633 9.01048 24.6633 9.8789Z"
+                        fill="white"/>
+                      <path
+                        d="M12.8537 24.6421C12.8537 24.6421 12.68 24.6421 12.3326 23.7736C12.1589 22.9052 10.7695 18.9105 10.7695 18.9105L20.8432 12.4842C20.8432 12.4842 21.3642 12.1368 21.3642 12.4842C21.3642 12.4842 21.538 12.4842 21.1906 12.8315C20.8432 13.1789 13.3748 19.9526 13.3748 19.9526"
+                        fill="#A5B4C4"/>
+                    </g>
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="#" class="blog-item__socials-link">
+                  <svg width="33" height="34" viewBox="0 0 33 34" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                      <path class="blog-path__bg"
+                            d="M16.5 33.5C25.6127 33.5 33 26.1127 33 17C33 7.8873 25.6127 0.5 16.5 0.5C7.3873 0.5 0 7.8873 0 17C0 26.1127 7.3873 33.5 16.5 33.5Z"
+                            fill="#A5B4C4"/>
+                      <path
+                        d="M12.7457 26.5333C12.3644 26.416 12.027 26.2253 11.8364 25.8587C11.587 25.404 11.631 24.92 11.983 24.5387C12.2177 24.2893 12.4524 24.0547 12.7017 23.8053C13.5524 22.9547 14.403 22.104 15.2537 21.2533C15.3564 21.1507 15.4444 21.048 15.5764 20.916C15.3124 20.872 15.0924 20.8427 14.8577 20.8133C13.9044 20.6667 12.9804 20.388 12.159 19.86C11.807 19.64 11.455 19.376 11.1617 19.0973C10.6777 18.628 10.6777 18.0413 11.103 17.5133C11.4697 17.0587 12.0564 16.956 12.6137 17.2787C13.0244 17.5133 13.4204 17.7773 13.8457 17.968C16.031 18.9067 18.143 18.7453 20.1524 17.44C20.431 17.2493 20.7244 17.1027 21.0764 17.1027C21.5457 17.1027 21.927 17.3813 22.1324 17.88C22.323 18.3347 22.2497 18.7307 21.8977 19.068C21.0617 19.904 20.0497 20.4027 18.9057 20.6667C18.451 20.7693 17.9817 20.8427 17.4977 20.9307C17.6004 21.048 17.703 21.1507 17.8057 21.2533C18.847 22.2947 19.8884 23.3507 20.9297 24.392C21.267 24.7293 21.487 25.1107 21.3404 25.5947C21.1937 26.0933 20.8417 26.416 20.3284 26.5187C20.3137 26.5187 20.299 26.5333 20.2844 26.548C20.1964 26.548 20.1084 26.548 20.0204 26.548C19.639 26.46 19.3604 26.2107 19.0964 25.9467C18.3484 25.184 17.6004 24.436 16.8524 23.688C16.5737 23.4093 16.5004 23.4093 16.2217 23.688C16.1924 23.7173 16.1484 23.7613 16.119 23.7907C15.415 24.5093 14.6964 25.2133 13.9924 25.932C13.743 26.1813 13.479 26.4307 13.1417 26.548C12.995 26.5333 12.863 26.5333 12.7457 26.5333Z"
+                        fill="white"/>
+                      <path
+                        d="M21.2665 11.676C21.0318 9.75467 19.6238 8.12667 17.7611 7.64267C17.4678 7.56934 17.1745 7.52534 16.8665 7.46667C16.6171 7.46667 16.3678 7.46667 16.1185 7.46667C16.0598 7.48134 16.0011 7.49601 15.9425 7.49601C15.1651 7.58401 14.4465 7.84801 13.8011 8.28801C11.6451 9.76934 11.0438 12.5707 12.3931 14.8147C13.6105 16.824 16.2065 17.66 18.3625 16.7213C20.4011 15.856 21.5451 13.8613 21.2665 11.676ZM16.5291 14.6533C15.2091 14.668 14.1531 13.6267 14.1385 12.3067C14.1238 10.9867 15.1798 9.93068 16.4851 9.93068C17.7905 9.91601 18.8318 10.972 18.8465 12.2773C18.8611 13.5827 17.8345 14.6387 16.5291 14.6533Z"
+                        fill="white"/>
+                    </g>
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="#" class="blog-item__socials-link">
+                  <svg width="33" height="34" viewBox="0 0 33 34" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                      <path class="blog-path__bg"
+                            d="M16.5 33.5C25.6127 33.5 33 26.1127 33 17C33 7.8873 25.6127 0.5 16.5 0.5C7.3873 0.5 0 7.8873 0 17C0 26.1127 7.3873 33.5 16.5 33.5Z"
+                            fill="#A5B4C4"/>
+                      <path
+                        d="M17.321 22.7199C11.0583 22.7199 7.47967 18.4226 7.33301 11.2799H10.4717C10.5743 16.5306 12.8917 18.7453 14.725 19.1999V11.2799H17.673V15.7973C19.477 15.6066 21.3837 13.5386 22.029 11.2799H24.977C24.4783 14.0813 22.425 16.1346 20.9583 16.9853C22.425 17.6746 24.7717 19.4639 25.6663 22.7199H22.4103C21.7063 20.5493 19.9757 18.8626 17.673 18.6279V22.7199H17.321Z"
+                        fill="white"/>
+                    </g>
+                  </svg>
+
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="blog-item__content">
+            <h1 class="blog-item__title main-subtitle">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            </h1>
+            <div class="blog-item__info">
+              <a class="blog-item__info-category regular-text"
+                 href="#">Рубрика</a>
+              <span
+                class="blog-item__info-date regular-text"> 08 июня 2022</span>
+            </div>
+
+            <div class="blog-item__content-wrapper">
+
+              <p class="blog-item__main-text accent-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                commodo
+                consequat. Duis autem vel.
+              </p>
+
+              <p class="blog-item__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                commodo
+                consequat.
+              </p>
+              <p class="blog-item__text">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+                facilisis at vero eros et accumsan et iusto odio dignissim qui
+                blandit praesent luptatum zzril delenit augue duis dolore te
+                feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                minim
+                veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                nisl ut aliquip ex ea commodo consequat. Duis autem vel.
+              </p>
+
+              <h3 class="blog-item__subtitle title-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+
+              <p class="blog-item__text blog-item__bulleted-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit.
+              </p>
+
+              <p class="blog-item__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam
+                nonummy nibh euismod.
+              </p>
+
+              <p class="blog-item__text blog-item__bulleted-text">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+                facilisis at vero eros et accumsan et iusto odio dignissim qui.
+              </p>
+              <p class="blog-item__text blog-item__bulleted-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat.
+              </p>
+
+
+              <div class="swiper blog-item__swiper">
+                <div class="swiper-wrapper blog-item__swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="blog-item__img">
+                      <img src="img/one-blog-slide1.jpg" alt="Into the Radius">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-item__img">
+                      <img src="img/one-blog-slide1.jpg" alt="Into the Radius">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-item__img">
+                      <img src="img/one-blog-slide1.jpg" alt="Into the Radius">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-item__img">
+                      <img src="img/one-blog-slide1.jpg" alt="Into the Radius">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="blog-item__img">
+                      <img src="img/one-blog-slide1.jpg" alt="Into the Radius">
+                    </div>
+                  </div>
+                </div>
+                <button class="blog-item__swiper-button-prev">
+                  <svg width="45" height="85" viewBox="0 0 45 85" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M43.7804 85C43.9218 85 44.0632 84.932 44.2046 84.8641C44.4167 84.6601 44.4167 84.2521 44.2046 84.0482L1.43166 42.9844L44.8409 0.968815C45.053 0.764855 45.053 0.356929 44.8409 0.152969C44.6288 -0.0509898 44.2046 -0.0509898 43.9925 0.152969L0.159073 42.5765C-0.0530243 42.7804 -0.0530243 43.1884 0.159073 43.3923L43.3562 84.8641C43.4269 84.932 43.639 85 43.7804 85Z"
+                      fill="#D2D6DC"/>
+                  </svg>
+                </button>
+                <button class="blog-item__swiper-button-next">
+                  <svg width="45" height="85" viewBox="0 0 45 85" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.21956 85C1.07816 85 0.936759 84.932 0.795361 84.8641C0.583263 84.6601 0.583263 84.2521 0.795361 84.0482L43.5683 42.9844L0.159073 0.968815C-0.0530243 0.764855 -0.0530243 0.356929 0.159073 0.152969C0.37117 -0.0509898 0.795374 -0.0509898 1.00747 0.152969L44.8409 42.5765C45.053 42.7804 45.053 43.1884 44.8409 43.3923L1.64376 84.8641C1.50236 84.932 1.36096 85 1.21956 85Z"
+                      fill="#D2D6DC"/>
+                  </svg>
+
+                </button>
+              </div>
+
+              <h3 class="blog-item__subtitle title-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+
+              <p class="blog-item__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                commodo
+                consequat. Duis autem vel eum iriure dolor in hendrerit in
+                vulputate velit esse molestie consequat, vel illum dolore eu
+                feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi.
+              </p>
+
+              <p class="blog-item__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                commodo
+                consequat.
+              </p>
+
+              <p class="blog-item__text">
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla
+                facilisis at vero eros et accumsan et iusto odio dignissim qui
+                blandit praesent luptatum zzril delenit augue duis dolore te
+                feugait nulla facilisi.
+              </p>
+            </div>
+            <a class="blog-item__more-btn main-link" href="#">
+              Показать еще
+            </a>
+
+          </div>
+        </article>
+        <aside class="blog-sidebar">
+          <div class="blog-sidebar__item">
+            <div class="blog-sidebar__img">
+              <img src="img/blog-sidebar1.png" alt="sidebar-img">
+            </div>
+            <p class="blog-sidebar__text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing
+            </p>
+          </div>
+          <div class="blog-sidebar__item blog-sidebar__category-item">
+            <a class="category-text" href="#">Карьера</a>
+            <p class="blog-sidebar__category-text">Lorem ipsum dolor sit amet,
+              consectetuer </p>
+            <p class="blog-sidebar__category-sub category-text">Тип
+              занятости</p>
+          </div>
+          <div class="blog-sidebar__item">
+            <div class="blog-sidebar__img">
+              <img src="img/blog-sidebar2.png" alt="sidebar-img">
+            </div>
+            <p class="blog-sidebar__text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="one-blog__more-articles">
+      <div class="container">
+        <h2 class="more-articles__title main-subtitle">Статьи <span>*относящиеся к продукту выше</span>
+        </h2>
+        @include('partials/articles-slider.html')
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>

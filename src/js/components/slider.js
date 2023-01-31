@@ -178,6 +178,14 @@ const swiperCareersModal = new Swiper('.careers-modals-swiper', {
   }
 });
 
+const swiperBlogItem = new Swiper('.blog-item__swiper', {
+  navigation: {
+    nextEl: '.blog-item__swiper-button-next',
+    prevEl: '.blog-item__swiper-button-prev'
+  },
+  spaceBetween: 210,
+});
+
 
  export { swiperArticles }
 
