@@ -186,6 +186,30 @@ const swiperBlogItem = new Swiper('.blog-item__swiper', {
   spaceBetween: 210,
 });
 
+const swiperOffice = new Swiper('.company-office__swiper', {
+  navigation: {
+    nextEl: '.company-office__swiper-button-next',
+    prevEl: '.company-office__swiper-button-prev'
+  },
+  slidesPerView: 1.41,
+  centeredSlides: true,
+  spaceBetween: 35,
+  initialSlide: 1,
+  breakpoints: {
+    1024: {
+      slidesPerView: 1.6,
+      spaceBetween: 35
+    },
+    1280: {
+      spaceBetween: 35,
+      slidesPerView: 1.41,
+    },
+  },
+  pagination: {
+    el: '.company-office__pagination',
+    type: 'fraction',
+  },
+});
 
  export { swiperArticles }
 

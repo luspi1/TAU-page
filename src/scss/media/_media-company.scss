@@ -1,0 +1,436 @@
+@media (max-width: 1650px) {
+  .company .company-features {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .company .company-office .office-swiper .company-office__swiper-panel {
+    padding: 0 155px;
+  }
+
+  .company .company-office__swiper-container {
+    transform: translateX(-20px);
+  }
+}
+
+@media (max-width: 1550px) {
+  .company .company-office .office-swiper .company-office__swiper-panel {
+    padding: 0 145px;
+  }
+
+
+}
+
+@media (max-width: 1280px) {
+  .company {
+    padding-top: 72px;
+  }
+
+  .company .company-indicators__list-item {
+    text-align: center;
+    margin-bottom: 92px;
+
+    span {
+      width: 100%;
+      height: 76px;
+      display: inline-block;
+      text-align: center;
+      bottom: -70px;
+    }
+  }
+
+  .company .company-caption {
+    margin-bottom: 72px;
+  }
+
+  .company .company-caption__top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  .company .company-caption__title {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .company .company-features {
+    margin-bottom: 72px;
+    padding-top: 72px;
+    padding-bottom: 22px;
+  }
+
+  .company .company-features__list-item {
+    margin-bottom: 42px;
+  }
+
+  .company .company-features__list-title {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .company .company-features__list {
+    justify-content: space-around;
+  }
+
+  .company .company-features__item-img _ {
+    margin-bottom: 22px;
+  }
+
+  .company .company-history {
+    margin-bottom: 72px;
+  }
+
+  .company .company-history .history-swiper__img::before {
+    width: 100%;
+  }
+
+  .company .company-history .history-swiper__category {
+    margin: 54px 0 6px;
+  }
+
+  .company .company-history .history-swiper .swiper-wrapper {
+    margin-bottom: 0;
+  }
+
+  .company .company-team h2.company-team__title {
+    margin-bottom: 34px;
+  }
+
+  .company .company-team__inner {
+    flex-direction: column;
+  }
+
+  .company .company-team__desc {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+  }
+
+  .company .company-team__img {
+    transform: translateY(0);
+    align-self: center;
+  }
+
+  .company .company-office {
+    margin-bottom: 54px;
+  }
+
+  .company .company-office__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .company .company-office__swiper-container {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    transform: translateX(0);
+  }
+
+  .company .company-office__content {
+    align-self: flex-start;
+    width: 80%;
+    padding: 0 40px;
+  }
+
+  .company .company-office__content-title {
+    margin-left: -22px;
+  }
+
+  .company .company-office h2.company-office__title {
+    margin: 70px 0 46px;
+  }
+
+  .company .company-office__content-list li {
+    max-width: 100%;
+  }
+
+  .company .company-office .office-swiper .swiper-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .company .company-office .office-swiper .company-office__swiper-panel {
+    padding: 0 20%;
+  }
+
+  .company .company-work {
+    margin-bottom: 52px;
+  }
+
+  .company .company-work .work-swiper {
+    padding-top: 12px;
+  }
+
+  .company .company-work .work-swiper .work-swiper__date.regular-text {
+    margin: 17px 0 8px;
+    line-height: 15px;
+  }
+
+  .company .company-work .work-swiper__category {
+    margin: 15px 0 7px;
+  }
+
+  .company .company-work__btn {
+    margin-top: 6px;
+  }
+
+
+  .company .company-careers__btn {
+    margin-top: 0;
+  }
+
+  .company .company-careers {
+    padding: 60px 0 70px;
+  }
+
+
+  .company .company-careers .container {
+    flex-direction: column;
+  }
+
+  .company .company-careers__title {
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 42px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .company {
+    padding-top: 59px;
+  }
+
+  .company .company-caption__top {
+    margin-bottom: 20px;
+  }
+
+  .company .company-caption {
+    margin-bottom: 55px;
+  }
+
+  .company .company-caption__title {
+    margin-bottom: 20px;
+    font-size: 65px;
+  }
+
+  .company .company-indicators__list-item {
+    margin-bottom: 74px;
+    font-size: 68px;
+  }
+
+  .company .company-features {
+    margin-bottom: 59px;
+    padding: 56px 0 21px 0;
+  }
+
+  .company .company-features .main-title {
+    margin-top: 0;
+    font-size: 45px;
+    line-height: 70px;
+  }
+
+  .company .company-features__list-item {
+    margin-bottom: 32px;
+  }
+
+  .company .company-history {
+    margin-bottom: 56px;
+  }
+
+  .company .company-team h2.company-team__title {
+    margin-bottom: 30px;
+  }
+
+  .company .company-team__desc {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .company .company-team__desc p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .company .company-team__img {
+    width: 100%;
+  }
+
+  .company .company-office h2.company-office__title {
+    margin: 54px 0 42px;
+  }
+
+  .company .company-office__content {
+    width: 100%;
+    padding: 0 37px;
+  }
+
+  .company .company-office {
+    margin-bottom: 40px;
+  }
+
+  .company .company-office__swiper-container {
+    margin-bottom: 50px;
+  }
+  .company .company-office .office-swiper .swiper-wrapper {
+    margin-bottom: 15px;
+  }
+  .company .company-office .office-swiper .company-office__swiper-panel {
+    padding: 0 15px;
+  }
+
+  .company .company-work {
+    margin-bottom: 38px;
+  }
+
+  .company .company-work__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company .company-work h2.company-work__title {
+    margin-bottom: 22px;
+  }
+
+  .company .company-work .work-swiper__text {
+    min-height: 70px;
+  }
+
+  .company .company-work .work-swiper .work-swiper__date.regular-text {
+    margin: 9px 0 15px;
+
+    line-height: 10px;
+  }
+
+  .company .company-work__btn {
+    margin-top: 0;
+  }
+
+
+  .company .company-careers {
+    padding: 49px 0 59px 0;
+  }
+
+  .company .company-careers__title {
+    max-width: 90%;
+  }
+
+  .company .company-careers__btn {
+    padding: 18px 35px;
+   }
+
+}
+
+@media (max-width: 768px) {
+  .company .company-caption__top {
+    padding-right: 0;
+  }
+  .company .company-caption__title {
+    margin-bottom: 10px;
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .company .company-indicators__list-item {
+    width: 48%;
+  }
+  .company .company-features .main-title {
+    line-height: 60px;
+  }
+  .company .company-features__list-item:not(.company-features__list-title) {
+    width: 46%;
+  }
+
+  .company .company-features__list {
+    justify-content: space-between;
+  }
+
+  .company .company-history .history-swiper__img::before {
+    height: 21px;
+  }
+
+  .company .company-office .office-swiper .company-office__swiper-panel {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .company .company-office__content {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .company .company-office__content-title {
+    margin-left: 0;
+  }
+  .company .company-work__menu {
+    width: 100%;
+  }
+
+  .company .company-work__menu .company-work__menu-btn {
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .company .company-work__top,
+  .company .company-work .work-swiper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  .company .company-careers__title {
+    max-width: 100%;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .company .company-careers__btn {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 520px) {
+  .company .company-caption__title {
+    margin-bottom: 0;
+    font-size: 50px;
+  }
+  .company .company-indicators__list {
+    flex-direction: column;
+  }
+
+  .company .company-indicators__list-item {
+    width: 90%;
+  }
+
+  .company .company-features__list-item:not(.company-features__list-title) {
+    width: 100%;
+  }
+
+  .company .company-work__menu {
+    justify-content: space-around;
+  }
+
+  .company .company-careers__title {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 410px) {
+  .company .company-global__title {
+    font-size: 35px;
+    line-height: 40px;
+
+    span {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  .company .company-global {
+    height: 355px;
+  }
+}

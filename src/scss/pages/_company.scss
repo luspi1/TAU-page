@@ -1,0 +1,454 @@
+.company {
+  padding-top: 61px;
+
+  .company-caption {
+    margin-bottom: 90px;
+
+    &__title {
+      margin-right: 100px;
+      font-size: 70px;
+      line-height: 85px;
+    }
+
+    &__top {
+      margin-bottom: 80px;
+      padding-right: 104px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      p {
+        max-width: 860px;
+        padding-top: 34px;
+      }
+    }
+
+  }
+
+  .company-indicators {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__list-item {
+      color: #1C283A;
+      margin-bottom: 120px;
+      width: 31%;
+      border-top: 1px solid #A5B4C4;
+      position: relative;
+      font-weight: 800;
+      font-size: 81px;
+      line-height: 99px;
+
+      span {
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+      }
+    }
+  }
+
+  .company-features {
+    padding: 100px 0 0;
+    background-color: #F3F3F3;
+    margin-bottom: 73px;
+
+    .main-title {
+      margin-top: -28px;
+      font-size: 55px;
+      line-height: 67px;
+      color: #000000;
+
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__list-item {
+      width: 31.2%;
+      margin-bottom: 100px;
+    }
+
+    &__list-title {
+      padding-top: 22px;
+
+    }
+
+    &__item-img {
+      margin-bottom: 27px;
+      height: 90px;
+    }
+
+    &__item-title {
+      &.title-text {
+        font-weight: 700;
+      }
+    }
+
+    &__item-text {
+      max-width: 470px;
+    }
+
+  }
+
+  .company-team {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h2.company-team__title {
+      margin-bottom: 55px;
+      line-height: 36px;
+    }
+
+    &__desc {
+      width: 49.2%;
+      margin-right: 30px;
+      padding-bottom: 50px;
+
+      p:not(:last-child) {
+        margin-bottom: 28px;
+      }
+    }
+
+    &__img {
+      width: 800px;
+      transform: translateY(-90px);
+
+
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .company-office {
+    margin-bottom: 78px;
+
+    h2.company-office__title {
+      margin-bottom: 63px;
+      line-height: 25px;
+
+    }
+
+    &__inner {
+      display: flex;
+    }
+
+    &__swiper-container {
+      margin-right: 48px;
+      transform: translateX(-40px);
+      width: 62%;
+      overflow: hidden;
+    }
+
+
+    .office-swiper {
+      .swiper-wrapper {
+        margin-bottom: 24px;
+      }
+
+      &__img {
+        padding-top: 58%;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .swiper-slide img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        transition: all .3s;
+      }
+
+      .swiper-slide {
+        transition: all .4s;
+      }
+
+      .swiper-slide:not(.swiper-slide-active) {
+        opacity: 0.5;
+      }
+
+      .company-office__swiper-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 180px;
+      }
+
+
+      .company-office__pagination {
+        position: static;
+        width: 45px;
+        color: $purple-main;
+      }
+
+      .company-office__swiper-controls {
+        transform: translateY(-7px);
+      }
+
+      .company-office__swiper-button-prev,
+      .company-office__swiper-button-next {
+        background: none;
+        border: none;
+        width: 40px;
+        height: 17px;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .company-office__swiper-button-next {
+        margin-left: 15px;
+      }
+
+      .company-office__swiper-button-prev svg path,
+      .company-office__swiper-button-next svg path {
+        transition: all .3s;
+      }
+
+      .company-office__swiper-button-prev:hover svg path,
+      .company-office__swiper-button-next:hover svg path {
+        fill: $purple-main;
+      }
+    }
+
+    &__content {
+      width: 30%;
+    }
+
+    &__content-title {
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 28px;
+      color: #000000;
+    }
+
+    &__content-list li {
+      position: relative;
+      max-width: 497px;
+      padding-left: 20px;
+      color: #000000;
+      span {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: -20px;
+          width: 6px;
+          height: 6px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background-color: $purple-main;
+        }
+      }
+    }
+  }
+
+  .company-work {
+    margin-bottom: 0;
+
+    > .container {
+      padding: 0;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+
+    h2.company-work__title {
+      margin-bottom: 0;
+      line-height: 55px;
+      color: $purple-main;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 601px;
+
+      .company-work__menu-btn {
+        border: none;
+        background: none;
+        border-radius: 5px;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: all .3s;
+      }
+
+      .company-work__menu-btn_active {
+        color: #FFFFFF;
+        background: $purple-main;
+      }
+    }
+
+    .work-swiper {
+      overflow: hidden;
+      padding: 10px 15px;
+
+      &__img {
+        padding-top: 51%;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .swiper-slide img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: all .3s;
+      }
+
+      .work-swiper__date {
+        &.regular-text {
+          display: none;
+          margin-top: 20px;
+          line-height: 22px;
+        }
+      }
+
+      .swiper-slide:hover img {
+        transform: scale(1.07);
+      }
+
+      &__category {
+        color: #00B7F1;
+        display: inline-block;
+        margin: 20px 0 14px;
+      }
+
+      &__content {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        min-height: 50px;
+      }
+
+      &__text {
+        max-width: 377px;
+      }
+
+      .company-work__swiper-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .company-work__swiper-button-prev,
+      .company-work__swiper-button-next {
+        background: none;
+        border: none;
+        width: 55px;
+        height: 25px;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .company-work__swiper-button-next {
+        margin-left: 5px;
+      }
+
+      .company-work__swiper-button-prev svg path,
+      .company-work__swiper-button-next svg path {
+        transition: all .3s;
+      }
+
+      .company-work__swiper-button-prev:hover svg path,
+      .company-work__swiper-button-next:hover svg path {
+        fill: #00B9EE;
+      }
+    }
+
+    &__btn {
+      margin-top: 15px;
+      background: none;
+      border: none;
+      color: $secondary;
+      cursor: pointer;
+      padding: 0;
+      transition: all .3s;
+
+      &:hover {
+        color: #00C9FF;
+      }
+    }
+
+  }
+  .company-careers {
+    padding: 80px 0 90px;
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__title {
+      max-width: 64%;
+      margin-right: 150px;
+      font-size: 45px;
+      line-height: 58px;
+        color: #000000;
+      span {
+        color: $purple-main;
+      }
+    }
+
+    &__btn {
+      margin-top: 5px;
+      padding: 24px 80px;
+      text-align: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transition: all .3s;
+      background-image: url("../img/company-careers_btn.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+
+      span {
+        max-width: 260px;
+        min-width: 180px;
+        display: inline-block;
+        line-height: 27px;
+      }
+
+    }
+  }
+
+}
