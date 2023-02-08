@@ -31,8 +31,8 @@ workBtns.forEach(btn => {
     e.preventDefault()
     removeClasses('company-work__menu-btn_active')
     btn.classList.add('company-work__menu-btn_active')
-    swiperWork.removeAllSlides()
-    swiperWork.appendSlide(filterByCategory(workSlides, btn.dataset.filter))
+    // swiperWork.removeAllSlides()
+    // swiperWork.appendSlide(filterByCategory(workSlides, btn.dataset.filter))
 
   })
 })
