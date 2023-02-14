@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Contacts'
+})
+
+<body class="page__body">
+
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+  <main class="main contacts-page">
+
+    <section class="section contacts-caption">
+      <div class="container">
+        <h1 class="contacts-caption__title main-title">Контакты</h1>
+        <ul class="contacts-caption__socials-list">
+          <li class="contacts-caption__socials-item"><a href="#">Telegram</a>
+          </li>
+          <li class="contacts-caption__socials-item"><a
+            href="#">Odnoklassniki</a>
+          </li>
+          <li class="contacts-caption__socials-item"><a href="#">Vkontakte</a>
+          </li>
+        </ul>
+        <ul class="contacts-caption__list">
+          <li class="contacts-caption__list-item">
+            <p>Информацию о вакансиях
+              смотрите на странице <a
+                href="careers.html">Карьера.</a></p>
+          </li>
+
+          <li class="contacts-caption__list-item">
+            <p>По всем вопросам — <a href="mailto:info@tau.tau">info@tau.tau</a>
+            </p>
+            <p>Пресса и маркетинг — <a href="mailto:marketing@tau.tau">marketing@tau.tau</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section contacts-map">
+      <div class="container">
+        <div class="contacts-map__inner">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A96aeac5069b543f4f20bbd9827f7e017bc9966a649e5a2e6cda26cf7508d93cd&amp;source=constructor"
+            width="100%" height="630" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</div>
+</body>
+
+</html>
