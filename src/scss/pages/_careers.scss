@@ -30,7 +30,8 @@
     &__list {
       width: 82%;
       margin-right: 42px;
-      height: 720px;
+      max-height: 720px;
+      height: max-content;
       overflow-y: scroll;
       padding-right: 30px;
       scrollbar-color: #F3F3F3 transparent;
@@ -61,7 +62,6 @@
       cursor: pointer;
       border-radius: 5px;
       margin-bottom: 28px;
-      max-height: 150px;
     }
 
     &__item-title {
