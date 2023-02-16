@@ -233,3 +233,9 @@ select::-ms-expand {
   opacity: 0.55 !important;
 }
 
+.filter-slider-btn_active,
+.filter-menu-btn_active {
+  color: #FFFFFF !important;
+  background: $purple-main !important;
+}
+

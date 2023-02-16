@@ -36,8 +36,10 @@
       scrollbar-color: #F3F3F3 transparent;
       scrollbar-width: thin;
 
+
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
       flex-wrap: wrap;
 
 
@@ -57,7 +59,9 @@
       padding: 20px 30px;
       width: 49%;
       cursor: pointer;
+      border-radius: 5px;
       margin-bottom: 28px;
+      max-height: 150px;
     }
 
     &__item-title {
@@ -112,10 +116,6 @@
       }
     }
 
-    &__menu-btn_active {
-      color: #FFFFFF;
-      background:$purple-main;
-    }
   }
 
 

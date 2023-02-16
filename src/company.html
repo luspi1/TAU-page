@@ -227,7 +227,7 @@
 
       </div>
     </section>
-    <section class="section company-work">
+    <section class="section company-work filter-slider">
       <div class="container">
         <div class="company-work__top">
           <h2 class="main-subtitle company-work__title">
@@ -235,30 +235,131 @@
           </h2>
           <ul class="company-work__menu">
             <li class="company-work__menu-item">
-              <button class="company-work__menu-btn main-link company-work__menu-btn_active" data-filter="all"
+              <button class="company-work__menu-btn main-link filter-slider-btn_active" data-filter-btn="all"
                       type="button">Все
               </button>
             </li>
             <li class="company-work__menu-item">
-              <button class="company-work__menu-btn main-link" data-filter="bonuses" type="button">Бонусы
+              <button class="company-work__menu-btn main-link" data-filter-btn="bonuses" type="button">Бонусы
               </button>
             </li>
             <li class="company-work__menu-item">
-              <button class="company-work__menu-btn main-link" data-filter="culture" type="button">Культура
+              <button class="company-work__menu-btn main-link" data-filter-btn="culture" type="button">Культура
               </button>
             </li>
             <li class="company-work__menu-item">
-              <button class="company-work__menu-btn main-link" data-filter="events" type="button">События
+              <button class="company-work__menu-btn main-link" data-filter-btn="events" type="button">События
               </button>
             </li>
             <li class="company-work__menu-item">
-              <button class="company-work__menu-btn main-link" data-filter="stories" type="button">Истории
+              <button class="company-work__menu-btn main-link" data-filter-btn="stories" type="button">Истории
               </button>
             </li>
           </ul>
         </div>
         <div class="container company-page__articles-container">
-          @include('partials/articles-slider.html')
+          <div class="articles__swiper articles-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-filter-slide="bonuses">
+                <div class="articles-swiper__img">
+                  <img src="img/articles-slide-1.jpg"
+                       alt="slide">
+                </div>
+                <a href="#"
+                   class="articles-swiper__category category-text">Бонусы</a>
+                <div class="articles-swiper__content swiper-no-swiping">
+                  <p class="articles-swiper__text main-link">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p class="articles-swiper__date">05.02</p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-filter-slide="culture">
+                <div class="articles-swiper__img">
+                  <img src="img/articles-slide-1.jpg"
+                       alt="slide">
+                </div>
+                <a href="#"
+                   class="articles-swiper__category category-text">Культура</a>
+                <div class="articles-swiper__content swiper-no-swiping">
+                  <p class="articles-swiper__text main-link">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p class="articles-swiper__date">05.02</p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-filter-slide="events">
+                <div class="articles-swiper__img">
+                  <img src="img/articles-slide-1.jpg"
+                       alt="slide">
+                </div>
+                <a href="#"
+                   class="articles-swiper__category category-text">События</a>
+                <div class="articles-swiper__content swiper-no-swiping">
+                  <p class="articles-swiper__text main-link">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p class="articles-swiper__date">05.02</p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-filter-slide="stories">
+                <div class="articles-swiper__img">
+                  <img src="img/articles-slide-1.jpg"
+                       alt="slide">
+                </div>
+                <a href="#"
+                   class="articles-swiper__category category-text">Истории</a>
+                <div class="articles-swiper__content swiper-no-swiping">
+                  <p class="articles-swiper__text main-link">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p class="articles-swiper__date">05.02</p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-filter-slide="culture">
+                <div class="articles-swiper__img">
+                  <img src="img/articles-slide-1.jpg"
+                       alt="slide">
+                </div>
+                <a href="#"
+                   class="articles-swiper__category category-text">Культура</a>
+                <div class="articles-swiper__content swiper-no-swiping">
+                  <p class="articles-swiper__text main-link">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p class="articles-swiper__date">05.02</p>
+                </div>
+              </div>
+              <div class="swiper-slide" data-filter-slide="stories">
+                <div class="articles-swiper__img">
+                  <img src="img/articles-slide-1.jpg"
+                       alt="slide">
+                </div>
+                <a href="#"
+                   class="articles-swiper__category category-text">Истории</a>
+                <div class="articles-swiper__content swiper-no-swiping">
+                  <p class="articles-swiper__text main-link">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p class="articles-swiper__date">05.02</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="articles__swiper-panel">
+              <button class="articles__btn main-link">
+                Все статьи
+              </button>
+              <div class="articles__swiper-controls">
+                <button class="articles__swiper-button-prev">
+                  <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M53.1 10.2H3.5V12.9H53.1V10.2Z" fill="#D2D6DC"/>
+                    <path
+                      d="M0.699951 11.6L12.5 0.5L14.3 2.5L4.59998 11.6L14.3 20.6L12.5 22.5L0.699951 11.6Z"
+                      fill="#D2D6DC"/>
+                  </svg>
+                </button>
+                <button class="articles__swiper-button-next">
+                  <svg width="54" height="23" viewBox="0 0 54 23" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50.1 10.2H0.5V12.9H50.1V10.2Z" fill="#D2D6DC"/>
+                    <path
+                      d="M41.2 22.5L39.4 20.6L49.1 11.6L39.4 2.5L41.2 0.5L53.1 11.6L41.2 22.5Z"
+                      fill="#D2D6DC"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
