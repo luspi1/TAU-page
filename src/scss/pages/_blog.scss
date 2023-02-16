@@ -23,7 +23,7 @@
     display: flex;
   }
 
- &__content {
+  &__content {
     margin-right: 32px;
     width: 58%;
   }
@@ -173,9 +173,12 @@
   }
 
   &__list-item {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 28px;
+
+    > a {
+      display: flex;
+      align-items: flex-start;
+    }
   }
 
   &__item-img {
