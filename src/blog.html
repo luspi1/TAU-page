@@ -16,7 +16,7 @@
     <section class="section">
       <div class="container">
         <div class="blog-page__inner">
-          <div class="blog-page__content">
+          <div class="blog-page__content filter-block">
             <a href="one-blog.html">
             <div class="blog-page__main-img">
               <img src="img/blog_main.png" alt="blog main image">
@@ -34,31 +34,30 @@
               rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
               explicabo. Nemo ...
             </p>
-
             <ul class="blog-page__menu">
               <li class="blog-page__menu-item">
                 <button
-                  class="blog-page__menu-btn main-link blog-page__menu-btn_active">
+                  class="blog-page__menu-btn main-link filter-menu-btn_active" data-filter-btn="all">
                   Все
                 </button>
               </li>
               <li class="blog-page__menu-item">
-                <button class="main-link blog-page__menu-btn">Новости</button>
+                <button class="main-link blog-page__menu-btn" data-filter-btn="tag1">Новости</button>
               </li>
               <li class="blog-page__menu-item">
-                <button class="main-link blog-page__menu-btn">События
+                <button class="main-link blog-page__menu-btn" data-filter-btn="tag2">События
                 </button>
               </li>
               <li class="blog-page__menu-item">
-                <button class="main-link blog-page__menu-btn">Продукты</button>
+                <button class="main-link blog-page__menu-btn" data-filter-btn="tag1">Продукты</button>
               </li>
               <li class="blog-page__menu-item">
-                <button class="main-link blog-page__menu-btn">Компания
+                <button class="main-link blog-page__menu-btn" data-filter-btn="tag2">Компания
                 </button>
               </li>
             </ul>
             <ul class="blog-page__blog-list">
-              <li class="blog-page__list-item">
+              <li class="blog-page__list-item" data-filter-el="tag1">
                 <a href="one-blog.html">
                   <div class="blog-page__item-img">
                     <img src="img/blog_blog.jpg" alt="blog article 1">
@@ -77,7 +76,7 @@
                   <p class="category-text">02 июня 2022</p>
                 </div>
               </li>
-              <li class="blog-page__list-item">
+              <li class="blog-page__list-item" data-filter-el="tag2">
                 <a href="one-blog.html">
                   <div class="blog-page__item-img">
                     <img src="img/blog_blog.jpg" alt="blog article 2">
@@ -96,7 +95,7 @@
                   <p class="category-text">25 мая 2022</p>
                 </div>
               </li>
-              <li class="blog-page__list-item">
+              <li class="blog-page__list-item" data-filter-el="tag2">
                 <a href="one-blog.html">
                   <div class="blog-page__item-img">
                     <img src="img/blog_blog.jpg" alt="blog article 3">
@@ -115,7 +114,7 @@
                   <p class="category-text">12 мая 2022</p>
                 </div>
               </li>
-              <li class="blog-page__list-item">
+              <li class="blog-page__list-item" data-filter-el="tag1">
                 <a href="one-blog.html">
                   <div class="blog-page__item-img">
                     <img src="img/blog_blog.jpg" alt="blog article 4">
@@ -135,7 +134,6 @@
                 </div>
               </li>
             </ul>
-
             <button class="blog-page__more-btn main-link" type="button">Показать больше +</button>
           </div>
           <aside class="blog-aside">

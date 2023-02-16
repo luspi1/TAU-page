@@ -1,6 +1,5 @@
 // Фильтрация
 
-
 import { removeClasses } from '../_functions'
 
 const filteringBlocks = document.querySelectorAll('.filter-block')
@@ -10,6 +9,8 @@ if (filteringBlocks) {
     const filteringElements = filteringBlock.querySelectorAll('[data-filter-el]')
     const filteringBtns = filteringBlock.querySelectorAll('[data-filter-btn]')
     const filteringElementsList = filteringElements[0].parentElement
+
+    console.log(filteringElementsList)
 
     filteringBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -38,21 +39,8 @@ if (filteringBlocks) {
 }
 
 
-// const productBtns = document.querySelectorAll('.products-main__menu-btn')
-const blogBtns = document.querySelectorAll('.blog-caption__menu-btn')
-// const careersBtns = document.querySelectorAll('.careers-caption__menu-btn')
-// const articlesBtns = document.querySelectorAll('.blog-page__menu-btn')
-
-// productBtns.forEach(btn => {
-//   btn.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     removeClasses('products-main__menu-btn_active')
-//     btn.classList.add('products-main__menu-btn_active')
-//   })
-// })
-
-
 // Переключения активных вкладок меню на странице статьи блога
+const blogBtns = document.querySelectorAll('.blog-caption__menu-btn')
 
 blogBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
@@ -63,13 +51,3 @@ blogBtns.forEach(btn => {
 })
 
 
-
-// Переключения активных вкладок страницы блога
-
-// articlesBtns.forEach(btn => {
-//   btn.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     removeClasses('blog-page__menu-btn_active')
-//     btn.classList.add('blog-page__menu-btn_active')
-//   })
-// })
