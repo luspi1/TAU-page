@@ -10,8 +10,6 @@ if (filteringBlocks) {
     const filteringBtns = filteringBlock.querySelectorAll('[data-filter-btn]')
     const filteringElementsList = filteringElements[0].parentElement
 
-    console.log(filteringElementsList)
-
     filteringBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault()
