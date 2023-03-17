@@ -15,6 +15,22 @@
       margin-right: 40px;
     }
 
+    .product-caption__content ul li {
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .product-caption__content ul li::before {
+      content: '+';
+      position: absolute;
+      color: #420AB8;
+      left: 0;
+      top: 0;
+      width: 10px;
+      height: 10px;
+    }
+
+
     &__content-title {
       margin-bottom: 40px;
       line-height: 132px;
