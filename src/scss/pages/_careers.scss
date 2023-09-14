@@ -7,6 +7,8 @@
   }
 
   .careers-caption {
+    margin-bottom: 70px;
+
     &__top {
       display: flex;
       margin-bottom: 33px;
@@ -111,13 +113,13 @@
       cursor: pointer;
       color: #1C283A;
       transition: all .3s;
+
       &.main-link {
         line-height: 27px;
       }
     }
 
   }
-
 
   .careers-work {
     padding: 57px 0 25px 0;
@@ -134,6 +136,7 @@
       margin-bottom: 5px;
       line-height: 55px;
       color: $purple-main;
+
       span {
         @include montserrat-semibold;
         font-size: 20px;
@@ -275,6 +278,259 @@
     }
 
   }
+
+  .company-team {
+    margin-bottom: 50px;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1280px) {
+        flex-direction: column;
+      }
+    }
+
+    h2.company-team__title {
+      margin-bottom: 55px;
+      line-height: 36px;
+      @media (max-width: 1280px) {
+        margin-bottom: 34px;
+      }
+      @media (max-width: 1024px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__desc {
+      width: 49.2%;
+      margin-right: 30px;
+      padding-bottom: 50px;
+
+      p:not(:last-child) {
+        margin-bottom: 28px;
+        @media (max-width: 1024px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (max-width: 1280px) {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        padding-bottom: 0;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__img {
+      width: 800px;
+      transform: translateY(-90px);
+      @media (max-width: 1280px) {
+        transform: translateY(0);
+        align-self: center;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .company-office {
+    margin-bottom: 78px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 1280px) {
+      margin-bottom: 54px;
+    }
+
+    h2.company-office__title {
+      margin-bottom: 63px;
+      line-height: 25px;
+      @media (max-width: 1024px) {
+        margin: 54px 0 42px;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      @media (max-width: 1280px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__swiper-container {
+      margin-right: 48px;
+      transform: translateX(-40px);
+      width: 62%;
+      overflow: hidden;
+      @media (max-width: 1280px) {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 40px;
+        transform: translateX(0);
+      }
+      @media (max-width: 1024px) {
+        margin-bottom: 50px;
+      }
+    }
+
+
+    .office-swiper {
+      .swiper-wrapper {
+        margin-bottom: 24px;
+        @media (max-width: 1024px) {
+          margin-bottom: 15px;
+        }
+      }
+
+      &__img {
+        padding-top: 58%;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .swiper-slide img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        transition: all .3s;
+      }
+
+      .swiper-slide {
+        transition: all .4s;
+      }
+
+      .swiper-slide:not(.swiper-slide-active) {
+        opacity: 0.5;
+      }
+
+      .company-office__swiper-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 180px;
+        @media (max-width: 1024px) {
+          padding: 0 15px;
+        }
+        @media (max-width: 768px) {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+
+
+      .company-office__pagination {
+        position: static;
+        width: 45px;
+        color: $purple-main;
+      }
+
+      .company-office__swiper-controls {
+        transform: translateY(-7px);
+      }
+
+      .company-office__swiper-button-prev,
+      .company-office__swiper-button-next {
+        background: none;
+        border: none;
+        width: 40px;
+        height: 17px;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .company-office__swiper-button-next {
+        margin-left: 15px;
+      }
+
+      .company-office__swiper-button-prev svg path,
+      .company-office__swiper-button-next svg path {
+        transition: all .3s;
+      }
+
+      .company-office__swiper-button-prev:hover svg path,
+      .company-office__swiper-button-next:hover svg path {
+        fill: $purple-main;
+      }
+    }
+
+    &__content {
+      width: 30%;
+      @media (max-width: 1280px) {
+        align-self: flex-start;
+        width: 80%;
+        padding: 0 40px;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+        padding: 0 37px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    &__content-title {
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 28px;
+      color: #000000;
+      @media (max-width: 1280px) {
+        margin-left: -22px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+    }
+
+    &__content-list li {
+      position: relative;
+      max-width: 497px;
+      padding-left: 20px;
+      color: #000000;
+
+      span {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: -20px;
+          width: 6px;
+          height: 6px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background-color: $purple-main;
+        }
+      }
+    }
+  }
+
 
 }
 
