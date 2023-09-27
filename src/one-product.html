@@ -11,6 +11,7 @@
   @include('partials/header.html', {
   'class': 'header_border'
   })
+  @include('partials/big-img-modal.html')
 
   <main class="main product-one">
     <section class="section product-caption">
@@ -99,39 +100,39 @@
       <div class="container">
         <div class="swiper product-gallery__swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-big-img="img/product-screen1.png">
               <div class="product-gallery__img">
-                <img src="img/product-img1.jpg" alt="">
+                <img src="img/product-screen2.png" alt="">
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-big-img="img/product-screen1.png">
               <div class="product-gallery__img">
-                <img src="img/product-img1.jpg" alt="">
+                <img src="img/product-screen3.png" alt="">
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-big-img="img/product-screen1.png">
               <div class="product-gallery__img">
-                <img src="img/product-img1.jpg" alt="">
+                <img src="img/product-screen4.png" alt="">
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-big-img="img/product-screen1.png">
               <div class="product-gallery__img">
-                <img src="img/product-img1.jpg" alt="">
+                <img src="img/product-screen2.png" alt="">
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-big-img="img/product-screen1.png">
               <div class="product-gallery__img">
-                <img src="img/product-img1.jpg" alt="">
+                <img src="img/product-screen3.png" alt="">
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-big-img="img/product-screen1.png">
               <div class="product-gallery__img">
-                <img src="img/product-img1.jpg" alt="">
+                <img src="img/product-screen4.png" alt="">
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-big-img="img/product-screen1.png">
               <div class="product-gallery__img">
-                <img src="img/product-img1.jpg" alt="">
+                <img src="img/product-screen2.png" alt="">
               </div>
             </div>
           </div>
@@ -153,12 +154,7 @@
         </div>
       </div>
     </section>
-    <section class="page-section articles">
-      <div class="container">
-        <h2 class="section-title articles__title main-subtitle">Статьи <sup>*относящиеся к продукту выше</sup></h2>
-        @include('partials/articles-slider.html')
-      </div>
-    </section>
+
   </main>
 
   @include('partials/footer.html')

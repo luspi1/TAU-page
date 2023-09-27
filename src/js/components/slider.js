@@ -130,7 +130,7 @@ const swiperGallery = new Swiper('.product-gallery__swiper', {
   },
   grabCursor: true,
   slidesPerView: 1,
-  spaceBetween: 60,
+  spaceBetween: 62,
   breakpoints: {
     768: {
       slidesPerView: 2,
