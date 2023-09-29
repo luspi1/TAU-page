@@ -118,34 +118,34 @@ const swiperArticles = new Swiper('.articles__swiper', {
 })
 
 
-const swiperGallery = new Swiper('.product-gallery__swiper', {
-  navigation: {
-    nextEl: '.product-gallery__swiper-button-next',
-    prevEl: '.product-gallery__swiper-button-prev'
-  },
+// const swiperGallery = new Swiper('.product-gallery__swiper', { 
+//   navigation: {
+//     nextEl: '.product-gallery__swiper-button-next',
+//     prevEl: '.product-gallery__swiper-button-prev'
+//   },
 
-  pagination: {
-    el: '.product-gallery__pagination',
-    clickable: 'true',
-  },
-  grabCursor: true,
-  slidesPerView: 1,
-  spaceBetween: 62,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
+//   pagination: {
+//     el: '.product-gallery__pagination',
+//     clickable: 'true',
+//   },
+//   grabCursor: true,
+//   slidesPerView: 1,
+//   spaceBetween: 62,
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 2,
 
-    },
-    1200: {
-      slidesPerView: 3,
+//     },
+//     1200: {
+//       slidesPerView: 3,
 
-    },
-    1600: {
-      slidesPerView: 4,
-    },
-  }
+//     },
+//     1600: {
+//       slidesPerView: 4,
+//     },
+//   }
 
-})
+// })
 
 
 const swiperCareersModal = new Swiper('.careers-modals-swiper', {
