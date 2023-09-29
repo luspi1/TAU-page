@@ -33,7 +33,7 @@ const prevBigImgButton = document.querySelector(".big-img-prev-button");
 const nextBigImgButton = document.querySelector(".big-img-next-button");
 
 const bigImgModal = document.querySelector(".big-img-modal");
-const bigImgModalPicture = bigImgModal.querySelector("img");
+const bigImgModalPicture = bigImgModal?.querySelector("img");
 
 let activeImage;
 let activeImageIndex = 0;
@@ -76,6 +76,6 @@ if (imageElements) {
     });
   });
 
-  prevBigImgButton.addEventListener("click", switchBigSlide);
-  nextBigImgButton.addEventListener("click", switchBigSlide);
+  prevBigImgButton?.addEventListener("click", switchBigSlide);
+  nextBigImgButton?.addEventListener("click", switchBigSlide);
 }
