@@ -33,4 +33,37 @@
     max-height: 85vh;
     width: 100%;
   }
+
+  .product-gallery__swiper-button-prev,
+  .product-gallery__swiper-button-next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+
+    svg {
+      width: 45px;
+      height: 100px;
+    }
+
+    &:hover svg path {
+      fill: $purple-main-hover;
+    }
+
+    svg path {
+      transition: all .3s;
+    }
+  }
+
+  .product-gallery__swiper-button-next {
+    right: -100px;
+  }
+
+  .product-gallery__swiper-button-prev {
+    left: -100px;
+  }
 }
