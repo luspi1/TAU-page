@@ -32,51 +32,50 @@ const imageElements = document.querySelectorAll("[data-big-img]");
 const prevBigImgButton = document.querySelector(".big-img-prev-button");
 const nextBigImgButton = document.querySelector(".big-img-next-button");
 
+const bigImgModal = document.querySelector(".big-img-modal");
+const bigImgModalPicture = bigImgModal.querySelector("img");
+
 let activeImage;
-let activeImageIndex;
+let activeImageIndex = 0;
+
+const checkActiveBtn = () => {
+  activeImageIndex === 0
+    ? prevBigImgButton.classList.add("swiper-button-disabled")
+    : prevBigImgButton.classList.remove("swiper-button-disabled");
+  activeImageIndex === imageElements.length - 1
+    ? nextBigImgButton.classList.add("swiper-button-disabled")
+    : nextBigImgButton.classList.remove("swiper-button-disabled");
+};
+
+const switchBigSlide = (e) => {
+  const isNextBtn = e.currentTarget.classList.contains("big-img-next-button");
+  const isPrevBtn = e.currentTarget.classList.contains("big-img-prev-button");
+  if (isNextBtn) {
+    swiperGallery.slideNext();
+    activeImageIndex++;
+  }
+  if (isPrevBtn) {
+    swiperGallery.slidePrev();
+    activeImageIndex--;
+  }
+  activeImage = imageElements[activeImageIndex];
+  bigImgModalPicture.src = activeImage.dataset.bigImg;
+  checkActiveBtn();
+};
 
 if (imageElements) {
   imageElements.forEach((el) => {
     const bigImgPath = el.dataset.bigImg;
     el.addEventListener("click", (e) => {
+      e.preventDefault();
       activeImage = el;
       activeImageIndex = el.ariaLabel[0] - 1;
-      e.preventDefault();
       showBigImgModal(bigImgPath);
-      swiperGallery.slideTo(Array.from(imageElements).indexOf(el));
-
-      nextBigImgButton.classList.remove("swiper-button-disabled");
-      prevBigImgButton.classList.remove("swiper-button-disabled");
+      swiperGallery.slideTo(activeImageIndex);
+      checkActiveBtn();
     });
   });
 
-  if (prevBigImgButton) {
-    prevBigImgButton.addEventListener("click", () => {
-      swiperGallery.slidePrev();
-      activeImageIndex -= 1;
-
-      activeImage = imageElements[activeImageIndex];
-      const activePath = activeImage.dataset.bigImg;
-      showBigImgModal(activePath);
-
-      if (activeImageIndex === 0) {
-        prevBigImgButton.classList.add("swiper-button-disabled");
-      }
-    });
-  }
-
-  if (nextBigImgButton) {
-    nextBigImgButton.addEventListener("click", () => {
-      swiperGallery.slideNext();
-      activeImageIndex += 1;
-
-      activeImage = imageElements[activeImageIndex];
-      const activePath = activeImage.dataset.bigImg;
-      showBigImgModal(activePath);
-
-      if (activeImageIndex + 1 === imageElements.length) {
-        nextBigImgButton.classList.add("swiper-button-disabled");
-      }
-    });
-  }
+  prevBigImgButton.addEventListener("click", switchBigSlide);
+  nextBigImgButton.addEventListener("click", switchBigSlide);
 }
