@@ -7,9 +7,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 
-    @media (max-width: 768px) {
-      flex-direction: column;
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
       align-items: center;
     }
   }
@@ -38,7 +39,23 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 39%;
+    gap: 80px;
+
+    @media (max-width: 1024px) {
+      font-size: 15px;
+      line-height: 23px;
+      gap: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 15px;
+      line-height: 23px;
+      gap: 20px;
+    }
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
 
     a {
       font-weight: 600;
@@ -52,27 +69,13 @@
       }
     }
 
-    @media (max-width: 1024px) {
-      justify-content: space-around;
-      font-size: 15px;
-      line-height: 23px;
-      width: 50%;
-    }
 
-    @media (max-width: 768px) {
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
 
   }
 
   &__menu-item {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    @media (max-width: 1024px) {
 
+    @media (max-width: 1024px) {
       a {
         font-size: 14px;
       }
@@ -81,7 +84,8 @@
 
 
   &__socials {
-    display: flex;
+    //display: flex;
+    display: none;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
