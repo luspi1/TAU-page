@@ -231,6 +231,16 @@
 
     &__content {
       width: 30%;
+
+      &._full {
+        width: 100%;
+
+        .company-office__content-list {
+          li {
+            max-width: 100%;
+          }
+        }
+      }
     }
 
     &__content-title {
@@ -246,6 +256,7 @@
       max-width: 497px;
       padding-left: 20px;
       color: #000000;
+
       span {
         position: relative;
 
@@ -262,6 +273,7 @@
         }
       }
     }
+
   }
 
   .company-work {
@@ -408,6 +420,7 @@
     }
 
   }
+
   .company-careers {
     padding: 80px 0 90px;
 
@@ -421,7 +434,8 @@
       margin-right: 150px;
       font-size: 45px;
       line-height: 58px;
-        color: #000000;
+      color: #000000;
+
       span {
         color: $purple-main;
       }

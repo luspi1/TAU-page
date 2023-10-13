@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+'title': 'Компания'
+})
+
+<body class="page__body">
+<div class="search-overlay"></div>
+<div class="site-container">
+  @include('partials/header.html', {
+  'class': 'header_border'
+  })
+
+  <main class="main company">
+    <section class="section company-caption">
+      <div class="container">
+
+        <div class="company-caption__top">
+          <h1 class="company-caption__title main-title">Технологии &
+            Направления</h1>
+          <p class="accent-text">1. Методы, способы и технологии, которые мы
+            используем в повседневной работе над нашими продуктами.
+            <br><br>
+            2. Направления деятельности: что, как и для кого мы делаем.</p>
+        </div>
+
+      </div>
+    </section>
+    <section class="section company-indicators">
+      <div class="container">
+        <ul class="company-indicators__list">
+          <li class="company-indicators__list-item">4<span
+            class="accent-text">языка программирования</span>
+          </li>
+          <li class="company-indicators__list-item">
+            3<span class="accent-text">методологии разработки
+</span>
+          </li>
+          <li
+            class="company-indicators__list-item company-indicators__rating-item">
+            3<span class="accent-text">комплексных стека
+</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section company-office">
+      <div class="container">
+        <h2 class="main-subtitle company-office__title">
+          Подробнее
+        </h2>
+        <div class="company-office__content _full">
+          <h3 class="company-office__content-title accent-text">Немного о нашем
+            офисе</h3>
+          <ul class="company-office__content-list">
+            <li>
+              <span></span>
+              Наш офис расположен в Тамбове, в здании, которое занимает группа
+              дружественных организаций.
+            </li>
+            <li>
+              <span></span>
+              Мы понимаем и помним, что офис — это, в первую очередь, место, где
+              работают люди. Поэтому там должно быть удобно и светло.
+            </li>
+            <li>
+              <span></span>
+              У нас есть разные помещения: два больших открытых пространства,
+              отдельные кабинеты бухгалтерии, руководства, других специалистов.
+            </li>
+            <li>
+              <span></span>
+              Небольшая, но уютная, кухня, оснащена кофемашиной, холодильником,
+              мебелью и другими полезными в быту предметами.
+            </li>
+            <li>
+              <span></span>
+              Все помещения в обязательном порядке кондиционируются и
+              обогреваются: работать комфортно и в зимнюю стужу, и в летний
+              зной.
+            </li>
+            <li>
+              <span></span>
+              Рабочие места специалистов оборудованы должным образом: мы не
+              экономим на том, на чем экономить нельзя.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <section class="section company-careers">
+      <div class="container">
+        <h3 class="company-careers__title main-subtitle">
+          Разделяете наши ценности,<br>
+          хотите <span>делать проекты</span> с удовольствием?</h3>
+        <a class="company-careers__btn main-link" href="#">
+          <span>перейти
+            <br>к вакансиям</span></a>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+
+</body>
+
+</html>
